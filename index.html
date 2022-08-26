@@ -1,14 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metro online store</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/Responsive/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <div class="topbar">
+            <div class="container flex">
+                <div class="topbar-text">
+                    <!-- <div class="contact-block"> -->
+                    <img src="images/call.svg" alt="call">
+                    <span class="contact-icon">+2354 3256 326</span>
+
+                    <img src="images/label.svg" alt="label">
+                    <span>demo@example.com</span>
+                    <!-- </div> -->
+
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">USD
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">INR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.top-bar -->
+        <div class="header-top">
+            <div class="container">
+                <div class="wbtop">
+                    <div class="header-left">
+                        <div class="header-logo">
+                            <span class="site-icon">
+                                <a href="index.html">
+                                    <img alt="metro" class="img-fluid" src="images/site-logo.png">
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- /.header-left -->
+                    <div class="header-search">
+                        <form method="get" class="woocommerce-product-search" action="">
+                            <div class="product-search-widget">
+                                <select class="customSelect" id="cselect" name="product_cat">
+                                    <option value="" selected="selected">All Categories</option>
+                                    <option value="bag">Bag</option>
+                                    <option value="camera">camera</option>
+                                    <option value="headphones">headphones</option>
+                                    <option value="mouse">mouse</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="shoes">Shoes</option>
+                                    <option value="speaker">Speaker</option>
+                                    <option value="stove">stove</option>
+                                    <option value="watch">watch</option>
+                                </select>
+                                <span class="customSelectArrow" id="customarrow"></span>
+                                <input type="search" class="search-field" placeholder="Search Products…"
+                                    title="Search for:">
+                                <input type="hidden" name="post_type" value="product">
+                                <button type="submit" value="Search">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.header-search -->
+                    <div class="header-right">
+                        <div class="headerbottom-text">
+                            Visit hot products
+                        </div>
+                    </div>
+                    <!-- /.header-right -->
+                </div>
+                <!-- /.wbtop -->
+            </div>
+        </div>
+        <!-- /.header-top -->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="wbbottom">
+                    <div class="category-list">
+                        <h3>all categories</h3>
+                    </div>
+                    <ul class="megamenu">
+                        <li><a href="#">shoes</a>
+                            <ul>
+                             <div class="megamenu-list">
+                                <li><a href="#">STOVE</a></li>
+                                <li><a href="#">Phone</a></li>
+                                <li><a href="#">Speaker</a></li>
+                                <li><a href="#">Camera</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Stove</a></li>
+                             </div>
+
+                             <div class="megamenu-list">
+                                <li><a href="#">STOVE</a></li>
+                                <li><a href="#">Phone</a></li>
+                                <li><a href="#">Speaker</a></li>
+                                <li><a href="#">Camera</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Stove</a></li>
+                             </div>
+
+                             <div class="megamenu-list-last">
+                                <li><a href="#">TOP RATED PRODUCTS</a></li>
+                                <li>
+                                  <div class="last-items">
+                                    <img src="images/25.jpg" width="91" height="91" alt="camera">
+                                    <div class="last-items-span-1">
+                                      <span>Mi 360° Home Security Camera</span>
+                                      <div>
+                                        <span style="color: black;">$115.00</span>
+                                        <span style="font-weight: bold;">$99.00</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="last-items">
+                                    <img src="images/20.jpg" width="91" height="91" alt="camera">
+                                    <div class="last-items-span-2">
+                                      <span>boAt Bassheads 900 Wired On Ear Headphones</span>
+                                      <div>
+                                        <span style="color: black;">$120.00</span>
+                                        <span style="font-weight: bold;">$74.00</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                 
+                             </div>
+
+
+
+
+
+                             <div class="megamenu-list">
+                                <li><a href="#">STOVE</a></li>
+                                <li><a href="#">Phone</a></li>
+                                <li><a href="#">Speaker</a></li>
+                                <li><a href="#">Camera</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Stove</a></li>
+                             </div>
+
+                             <div class="megamenu-list">
+                                <li><a href="#">STOVE</a></li>
+                                <li><a href="#">Phone</a></li>
+                                <li><a href="#">Speaker</a></li>
+                                <li><a href="#">Camera</a></li>
+                                <li><a href="#">Watch</a></li>
+                                <li><a href="#">Stove</a></li>
+                             </div>
+
+                             <div class="megamenu-list-last">
+                                <li><a href="#">RECENT POSTS</a></li>
+                                <li>
+                                  <div class="last-items-2">
+                                    <img src="images/cam.jpg" width="109" height="63" alt="camera">
+                                    <div class="last-2-items-span">
+                                      <span>Morbi lacinia dolor ut diam maximus, id gravida velit elementum.</span>
+                                      <div>
+                                        <span style="color: black;">March 16, 2022</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li>
+                                  <div class="last-items-2">
+                                    <img src="images/mac.jpg" width="109" height="63" alt="camera">
+                                    <div class="last-2-items-span">
+                                      <span>Curabitur mollis sollicitudin purus id pulvinar. Integer massa magna, facilisis eget eros gravida.</span>
+                                      <div>
+                                        <span style="color: black;">March 2, 2022</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                 
+                             </div>
+                            </ul>       
+                        </li>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">camera</a></li>
+                        <li><a href="#">speaker</a></li>
+                        <li><a href="#">stove</a></li>
+                        <li><a href="#">phone</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">more categories</a></li>
+                    </ul>
+                    <!-- /.category-list -->
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">shop</a></li>
+                            <li><a href="#">blog</a>
+                                <ul>
+                                    <li><a href="#">left sidebar</a></li>
+                                    <li><a href="#">right sidebar</a></li>
+                                    <li><a href="#">no sidebar</a></li>
+                                </ul>
+                                <span></span>
+                            </li>
+                            <li><a href="#">about us</a>
+                            </li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /.navigation -->
+                    <div class="account-cart">
+                        <div class="topbar-link flex-cards">
+                            <span><img class="account-card-images" src="images/user.png" alt=""></span>
+                            <p>Sign In</p>
+                        </div>
+                        <!-- /.topbar-link -->
+                        <div class="wishlist-menu flex-cards">
+                            <span><img class="account-card-images" src="images/header-heart.svg" alt=""></span>
+                            <p>wishlist</p>
+                        </div>
+                        <!-- /.wishlist-menu -->
+                        <div class="header-cart flex-cards">
+                            <span><img class="account-card-images" src="images/shopping.png" alt=""></span>
+                            <span class="quanitity">0</span>
+                            <p>cart</p>
+                        </div>
+                        <!-- /.header-cart -->
+                    </div>
+                    <!-- /.account-cart -->
+                </div>
+            </div>
+        </div>
+        <!-- /.header-bottom -->
+    </header>
+    <!-- /.header -->
+
+
+
+    <section class="special-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+
+                    <!-- Carousel -->
+                    <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="4000">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/mouse.jpg" alt="Los Angeles" width="823px" height="542px"
+                                    class="d-block" style="width:100%">
+                                <div class="carousel-caption">
+                                    <div class="main_box">
+                                        <p class="animate__animated animate__fadeInLeft">special</p>
+                                        <h2 class="animate__animated animate__slideInRight">Offer</h2>
+                                        <p class="animate__animated animate__fadeInLeft">on mobile phones</p>
+                                        <p class="animate__animated animate__fadeInLeft">Lorem Ipsum is simply dummy
+                                            text of the printing and typesetting industry Lorem Ipsum.</p>
+                                        <div class="slider_btn animate__animated animate__fadeInRight"><a href="#">Start
+                                                Shopping</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/phones.jpg" alt="Chicago" width="823px" height="542px" class="d-block"
+                                    style="width:100%">
+                                <div class="carousel-caption">
+                                    <div class="main_box">
+                                        <p class="animate__animated animate__fadeInLeft">special</p>
+                                        <h2 class="animate__animated animate__slideInRight">Offer</h2>
+                                        <p class="animate__animated animate__fadeInLeft">on mobile phones</p>
+                                        <p class="animate__animated animate__fadeInLeft">Lorem Ipsum is simply dummy
+                                            text of the printing and typesetting industry Lorem Ipsum.</p>
+                                        <div class="slider_btn animate__animated animate__fadeInRight"><a href="#">Start
+                                                Shopping</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="col-4">
+                    <div class="elements-widget">
+                        <div class="firs-widget">
+                        <img src="images/s1.jpg" width="417px" height="256px" alt="cloud-1">
+                        <span class="static-inner">   
+                            <span class="text">Headset HyperX Cloud</span>
+                            <span class="text">50% Off</span>
+                            <span class="text3 static-text">New Audio Experience</span>
+                            <span class="text4 static-text">Wireless With Good Sound</span>
+                        </span>
+                        </div>
+                        <div class="second-widget">
+                            <img src="images/s2.jpg" width="417px" height="256px" alt="cloud-1">
+                            <span class="static-inner">   
+                                <span class="text">Mi NoteBook 14</span>
+                                <span class="text">
+                                <span style="font-size: 20px; font-weight: 400;">From </span>$215.22</span>
+                                <span class="text3 static-text">- 36.56cm (14) FHD Anti-Glare</span>
+                                <span class="text4 static-text">Display</span>
+                                <span class="text5 static-text">- 1.5Kg Ultra-Light</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.special-section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
