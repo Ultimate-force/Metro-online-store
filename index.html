@@ -18,6 +18,86 @@
 <body>
 
     <header class="header">
+
+        <div class="container">
+            <div class="responsive-topbar none">
+                <div class="flex-elements">
+                    <span class="site-icon">
+                        <i  class="fa fa-bars hamburger" aria-hidden="true"></i>
+
+                        <a href="index.html">
+                            <img alt="logo" class="img-fluid" src="images/site-logo.png">
+                        </a>
+                    </span>
+
+
+                    <div class="account-cart">
+                        <div class="topbar-link flex-cards">
+                            <span><img class="responsive-card-images" src="images/user.png" alt=""></span>
+                        </div>
+                        <!-- /.topbar-link -->
+                        <div class="wishlist-menu-res flex-cards">
+                            <span><img class="responsive-card-images" src="images/header-heart.svg" alt=""></span>
+                        </div>
+                        <!-- /.wishlist-menu -->
+                        <div class="header-cart flex-cards">
+                            <span><img class="responsive-card-images" src="images/shopping.png" alt=""></span>
+                            <span class="quanitity">0</span>
+                        </div>
+                        <!-- /.header-cart -->
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: none;" class="mobile-menu">
+                <h3 class="mob-toggle">Menu</h3>
+                <span class="close-menu"></span>
+                    <ul class="mobile-ul">
+                        <li class=""><a style="color:#015ADE" href="#" aria-current="page">Home</a></li>
+                        <li class=""><a href="#">Shop</a></li>
+                        <li class="nav-button">
+                            <ul class="sub-menu closed"> 
+                                <li><a href="#">Blog</a><span id="down-click"></span></li>
+                                <li><a href="#">Left sidebar</a></li>
+                                <li><a href="#">Right Sidebar</a></li>
+                                <li><a href="#">No Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="#">About Us</a></li>
+                        <li class=""><a href="#">Contact Us</a></li>
+                    </ul>
+            </div>
+
+
+
+
+            <div class="header-search none">
+                <form method="get" class="woocommerce-product-search" action="">
+                    <div class="product-search-widget">
+                        <select class="customSelect" id="cselectsecond" name="product_cat">
+                            <option value="" selected="selected">All Categories</option>
+                            <option value="bag">Bag</option>
+                            <option value="camera">camera</option>
+                            <option value="headphones">headphones</option>
+                            <option value="mouse">mouse</option>
+                            <option value="phone">Phone</option>
+                            <option value="shoes">Shoes</option>
+                            <option value="speaker">Speaker</option>
+                            <option value="stove">stove</option>
+                            <option value="watch">watch</option>
+                        </select>
+                        <span class="customSelectArrow" id="customarrowsecond"></span>
+                        <input type="search" class="search-field" placeholder="Search Products…" title="Search for:">
+                        <input type="hidden" name="post_type" value="product">
+                        <button type="submit" value="Search">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
         <div class="topbar">
             <div class="container flex">
                 <div class="topbar-text">
@@ -96,106 +176,110 @@
                         <h3>all categories</h3>
                     </div>
                     <ul class="megamenu">
-                        <li><a href="#">shoes</a>
-                            <ul>
-                             <div class="megamenu-list">
-                                <li><a href="#">STOVE</a></li>
-                                <li><a href="#">Phone</a></li>
-                                <li><a href="#">Speaker</a></li>
-                                <li><a href="#">Camera</a></li>
-                                <li><a href="#">Watch</a></li>
-                                <li><a href="#">Stove</a></li>
-                             </div>
+                        <li id="li-hover"><a href="#">shoes</a>
+                            <ul style="display: none;" id="megamenu-list">
+                                <div class="megamenu-list">
+                                    <li><a href="#">STOVE</a></li>
+                                    <li><a href="#">Phone</a></li>
+                                    <li><a href="#">Speaker</a></li>
+                                    <li><a href="#">Camera</a></li>
+                                    <li><a href="#">Watch</a></li>
+                                    <li><a href="#">Stove</a></li>
+                                </div>
 
-                             <div class="megamenu-list">
-                                <li><a href="#">STOVE</a></li>
-                                <li><a href="#">Phone</a></li>
-                                <li><a href="#">Speaker</a></li>
-                                <li><a href="#">Camera</a></li>
-                                <li><a href="#">Watch</a></li>
-                                <li><a href="#">Stove</a></li>
-                             </div>
+                                <div class="megamenu-list">
+                                    <li><a href="#">STOVE</a></li>
+                                    <li><a href="#">Phone</a></li>
+                                    <li><a href="#">Speaker</a></li>
+                                    <li><a href="#">Camera</a></li>
+                                    <li><a href="#">Watch</a></li>
+                                    <li><a href="#">Stove</a></li>
+                                </div>
 
-                             <div class="megamenu-list-last">
-                                <li><a href="#">TOP RATED PRODUCTS</a></li>
-                                <li>
-                                  <div class="last-items">
-                                    <img src="images/25.jpg" width="91" height="91" alt="camera">
-                                    <div class="last-items-span-1">
-                                      <span>Mi 360° Home Security Camera</span>
-                                      <div>
-                                        <span style="color: black;">$115.00</span>
-                                        <span style="font-weight: bold;">$99.00</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
+                                <div class="megamenu-list-last">
+                                    <li><a href="#">TOP RATED PRODUCTS</a></li>
+                                    <li>
+                                        <div class="last-items">
+                                            <img src="images/25.jpg" width="91" height="91" alt="camera">
+                                            <div class="last-items-span-1">
+                                                <span>Mi 360° Home Security Camera</span>
+                                                <div>
+                                                    <span
+                                                        style="color: black; text-decoration: line-through; font-size: 13px;">$120.00</span>
+                                                    <span style="font-weight: bold;">$74.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
 
-                                <li>
-                                  <div class="last-items">
-                                    <img src="images/20.jpg" width="91" height="91" alt="camera">
-                                    <div class="last-items-span-2">
-                                      <span>boAt Bassheads 900 Wired On Ear Headphones</span>
-                                      <div>
-                                        <span style="color: black;">$120.00</span>
-                                        <span style="font-weight: bold;">$74.00</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                 
-                             </div>
+                                    <li>
+                                        <div class="last-items">
+                                            <img src="images/20.jpg" width="91" height="91" alt="camera">
+                                            <div class="last-items-span-2">
+                                                <span>boAt Bassheads 900 Wired On Ear Headphones</span>
+                                                <div>
+                                                    <span
+                                                        style="color: black; text-decoration: line-through; font-size: 13px;">$115.00</span>
+                                                    <span style="font-weight: bold;">$99.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </div>
 
 
 
 
 
-                             <div class="megamenu-list">
-                                <li><a href="#">STOVE</a></li>
-                                <li><a href="#">Phone</a></li>
-                                <li><a href="#">Speaker</a></li>
-                                <li><a href="#">Camera</a></li>
-                                <li><a href="#">Watch</a></li>
-                                <li><a href="#">Stove</a></li>
-                             </div>
+                                <div class="megamenu-list">
+                                    <li><a href="#">STOVE</a></li>
+                                    <li><a href="#">Phone</a></li>
+                                    <li><a href="#">Speaker</a></li>
+                                    <li><a href="#">Camera</a></li>
+                                    <li><a href="#">Watch</a></li>
+                                    <li><a href="#">Stove</a></li>
+                                </div>
 
-                             <div class="megamenu-list">
-                                <li><a href="#">STOVE</a></li>
-                                <li><a href="#">Phone</a></li>
-                                <li><a href="#">Speaker</a></li>
-                                <li><a href="#">Camera</a></li>
-                                <li><a href="#">Watch</a></li>
-                                <li><a href="#">Stove</a></li>
-                             </div>
+                                <div class="megamenu-list">
+                                    <li><a href="#">STOVE</a></li>
+                                    <li><a href="#">Phone</a></li>
+                                    <li><a href="#">Speaker</a></li>
+                                    <li><a href="#">Camera</a></li>
+                                    <li><a href="#">Watch</a></li>
+                                    <li><a href="#">Stove</a></li>
+                                </div>
 
-                             <div class="megamenu-list-last">
-                                <li><a href="#">RECENT POSTS</a></li>
-                                <li>
-                                  <div class="last-items-2">
-                                    <img src="images/cam.jpg" width="109" height="63" alt="camera">
-                                    <div class="last-2-items-span">
-                                      <span>Morbi lacinia dolor ut diam maximus, id gravida velit elementum.</span>
-                                      <div>
-                                        <span style="color: black;">March 16, 2022</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
+                                <div class="megamenu-list-last">
+                                    <li><a href="#">RECENT POSTS</a></li>
+                                    <li>
+                                        <div class="last-items-2">
+                                            <img src="images/cam.jpg" width="109" height="63" alt="camera">
+                                            <div class="last-2-items-span">
+                                                <span>Morbi lacinia dolor ut diam maximus, id gravida velit
+                                                    elementum.</span>
+                                                <div>
+                                                    <span style="color: black;">March 16, 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
 
-                                <li>
-                                  <div class="last-items-2">
-                                    <img src="images/mac.jpg" width="109" height="63" alt="camera">
-                                    <div class="last-2-items-span">
-                                      <span>Curabitur mollis sollicitudin purus id pulvinar. Integer massa magna, facilisis eget eros gravida.</span>
-                                      <div>
-                                        <span style="color: black;">March 2, 2022</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                 
-                             </div>
-                            </ul>       
+                                    <li>
+                                        <div class="last-items-2">
+                                            <img src="images/mac.jpg" width="109" height="63" alt="camera">
+                                            <div class="last-2-items-span">
+                                                <span>Curabitur mollis sollicitudin purus id pulvinar. Integer massa
+                                                    magna, facilisis eget eros gravida.</span>
+                                                <div>
+                                                    <span style="color: black;">March 2, 2022</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </div>
+                            </ul>
                         </li>
                         <li><a href="#">watch</a></li>
                         <li><a href="#">camera</a></li>
@@ -255,7 +339,7 @@
     <section class="special-section">
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="large-block col-md-12">
 
                     <!-- Carousel -->
                     <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="4000">
@@ -269,8 +353,7 @@
                         <!-- The slideshow/carousel -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/mouse.jpg" alt="Los Angeles" width="823px" height="542px"
-                                    class="d-block" style="width:100%">
+                                <img src="images/mouse.jpg" alt="Los Angeles" class="d-block" style="width:100%">
                                 <div class="carousel-caption">
                                     <div class="main_box">
                                         <p class="animate__animated animate__fadeInLeft">special</p>
@@ -284,8 +367,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/phones.jpg" alt="Chicago" width="823px" height="542px" class="d-block"
-                                    style="width:100%">
+                                <img src="images/phones.jpg" alt="Chicago" class="d-block" style="width:100%">
                                 <div class="carousel-caption">
                                     <div class="main_box">
                                         <p class="animate__animated animate__fadeInLeft">special</p>
@@ -305,29 +387,29 @@
 
 
                 </div>
-                <div class="col-4">
-                    <div class="elements-widget">
-                        <div class="firs-widget">
-                        <img src="images/s1.jpg" width="417px" height="256px" alt="cloud-1">
-                        <span class="static-inner">   
+                <div class="col-4 d-flex align-content-between flex-wrap col-none">
+                    <!-- <div class="elements-widget"> -->
+                    <div class="firs-widget">
+                        <img src="images/s1.jpg" alt="cloud-1">
+                        <span class="static-inner">
                             <span class="text">Headset HyperX Cloud</span>
                             <span class="text">50% Off</span>
                             <span class="text3 static-text">New Audio Experience</span>
                             <span class="text4 static-text">Wireless With Good Sound</span>
                         </span>
-                        </div>
-                        <div class="second-widget">
-                            <img src="images/s2.jpg" width="417px" height="256px" alt="cloud-1">
-                            <span class="static-inner">   
-                                <span class="text">Mi NoteBook 14</span>
-                                <span class="text">
-                                <span style="font-size: 20px; font-weight: 400;">From </span>$215.22</span>
-                                <span class="text3 static-text">- 36.56cm (14) FHD Anti-Glare</span>
-                                <span class="text4 static-text">Display</span>
-                                <span class="text5 static-text">- 1.5Kg Ultra-Light</span>
-                            </span>
-                        </div>
                     </div>
+                    <div class="second-widget">
+                        <img src="images/s2.jpg" alt="cloud-2">
+                        <span class="static-inner">
+                            <span class="text">Mi NoteBook 14</span>
+                            <span class="text">
+                                <span style="font-size: 20px; font-weight: 400;">From </span>$215.22</span>
+                            <span class="text3 static-text">- 36.56cm (14) FHD Anti-Glare</span>
+                            <span class="text4 static-text">Display</span>
+                            <span class="text5 static-text">- 1.5Kg Ultra-Light</span>
+                        </span>
+                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>

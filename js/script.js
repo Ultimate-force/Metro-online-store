@@ -11,8 +11,22 @@ $(document).ready(function(){
         $('#customarrow').toggleClass('customSelectArrow');
     };
 
+    // secondArrowFunction
+
+    $('#customarrowsecond').click(function() {
+        $(this).toggleClass('customSelectOpen');
+    }), function() { 
+        $(this).toggleClass('customSelectArrow');
+    };
+
+    $('#cselectsecond').click(function() {
+        $('#customarrowsecond').toggleClass('customSelectOpen');
+    }), function() { 
+        $('#customarrowsecond').toggleClass('customSelectArrow');
+    };
 
 
+    // visible dropdown menu
     $(function(){
         $('.category-list').click(function(){
             divTrigger = $('.category-list').index(this);
@@ -27,17 +41,47 @@ $(document).ready(function(){
        
     });
 
+    // dropleft menu
+    $("#li-hover").hover(
+        function() {
+         $('#megamenu-list', this).stop().fadeIn();
+        },
+        function() { 
+            $('#megamenu-list', this).stop().fadeOut();
+    });
 
+
+    // navbar menu arrow
+    (function() {
+        document.querySelector('#down-click').addEventListener('click', function() {
+            $('.sub-menu').toggleClass('closed');
+            $('#down-click').toggleClass('rotate');
+    
+        }, false);
+      })();
+
+
+
+    $('.hamburger').click(function() {
+        $('.mobile-menu').toggleClass('navbar-active');
+    }) 
+    
+    $('.close-menu').click(function() {
+        $('.mobile-menu').removeClass('navbar-active');
+    }) 
+     
+});
+
+
+
+
+
+ 
+ 
 
      
-})
-
-
-// document.getElementById('customarrow').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     document.getElementById('cselect').click();
-//   });
- 
+       
+    
 
 
 
