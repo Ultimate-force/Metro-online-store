@@ -69,6 +69,15 @@ $(document).ready(function(){
     $('.close-menu').click(function() {
         $('.mobile-menu').removeClass('navbar-active');
     }) 
+
+
+    // product-carousel
+
+    $('.product-slider').slick({
+      infinite: false,
+      slidesToShow: 5,  
+      slidesToScroll: 1 
+    })
      
 });
 

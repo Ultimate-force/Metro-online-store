@@ -772,10 +772,7 @@ text-transform: uppercase;
 
  
 
-.text3{
-  padding-bottom: 9px;
-}
-
+ 
 
 .static-inner{
   display: inline-flex;
@@ -795,6 +792,7 @@ text-transform: uppercase;
   text-transform: capitalize;
   font-weight: 400;
   letter-spacing: 0.5px;
+  padding-bottom: 9px;
 }
 
 .static-inner span:nth-of-type(2){
@@ -875,3 +873,69 @@ text-transform: uppercase;
 
 
 
+/* SPECIAL PRODUCT SECTION */
+
+.special-product{
+  /* background: linear-gradient(0deg, #f5f5f5 63%, #fff 50%); */
+  background: #f5f5f5;
+}
+
+.special-product h2{
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 800;
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  margin: 0;
+  padding-left: 50px;
+}
+.p-slide{
+  width: 260px;
+  padding: 3px 15px;
+}
+
+.product-detail-wrapper{
+  background: #fff;
+  padding: 10px 15px 20px 15px;
+  width: 14.4rem;
+}
+
+.product-detail-wrapper span:nth-of-type(1) {
+  display: table;
+  color: #fcae01;
+}
+
+.product-detail-wrapper h3{
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 15px;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.product-detail-wrapper a{
+  text-decoration: none;
+  padding: 7px 0px 7px 0px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.product-detail-wrapper h3:hover{
+  color: #015ADE;
+}
+
+ 
+
+.image-block img{
+  border-radius: 11px 11px 0px 0px;
+}
