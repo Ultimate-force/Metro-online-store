@@ -75,9 +75,32 @@ $(document).ready(function(){
 
     $('.product-slider').slick({
       infinite: false,
+      dots: false,
       slidesToShow: 5,  
-      slidesToScroll: 1 
-    })
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      draggable: true,
+      speed: 200,
+      appendArrows:$('.slider-header'),
+         responsive: [
+         {
+            breakpoint: 1250,
+            settings: {
+                slidesToShow: 4
+           }
+         },{
+            breakpoint: 1020,
+            settings: {
+               slidesToShow: 3
+           }
+         },{
+            breakpoint: 768,
+            settings: {
+               slidesToShow: 2
+           }
+        }
+]
+    });
      
 });
 
