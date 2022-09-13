@@ -98,6 +98,11 @@ $(document).ready(function(){
             settings: {
                slidesToShow: 2
            }
+        },{
+            breakpoint: 540,
+            settings: {
+               slidesToShow: 1
+           }
         }
 ]
     });

@@ -556,6 +556,23 @@
 }
 
 
-/* Navbar mobile menu container */
+/* special product slider */
 
+@media only screen and (max-width: 1020px){
+.special-product h2{
+  font-size: 24px;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .special-product h2{
+    font-size: 20px;
+  }
+  }
+
+@media only screen and (max-width: 540px){
+  .special-product h2::before{
+    display: none;
+  }
+    }
 

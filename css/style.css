@@ -337,10 +337,7 @@ img, svg {
   flex-wrap: wrap;
 }
 
-/* .header-bottom ul.megamenu li:nth-of-type(1):hover ul {
-	opacity: 1;
-} */
-
+ 
 .header-bottom ul.megamenu li:nth-of-type(1) ul li{
   padding: 8px 0px;
   list-style-type: none;
@@ -639,6 +636,10 @@ img, svg {
 
 /* carousel */
 
+.special-section{
+  background: linear-gradient(0deg, #f5f5f5 18%, #fff 0%);
+}
+
 .carousel-item {
   transition: transform 0.6s ease-in-out;
 }
@@ -876,7 +877,7 @@ text-transform: uppercase;
 /* SPECIAL PRODUCT SECTION */
 
 .special-product{
-  /* background: linear-gradient(0deg, #f5f5f5 63%, #fff 50%); */
+  padding: 0px 0px 60px 0px;
   background: #f5f5f5;
 }
 
@@ -904,8 +905,8 @@ text-transform: uppercase;
 
 .p-slide{
   width: 260px;
-  padding: 3px 15px;
-  position: relative;
+  display: flex!important;
+  justify-content: center;
   border-radius: 10px;
 }
 
@@ -948,6 +949,9 @@ text-transform: uppercase;
   width: 14.4rem;
   border-radius: 10px;
   transition: 0.5s;
+  position: relative;
+  margin: 2px 0px 0px;
+  margin-bottom: 2px!important;
 }
 
 
@@ -955,7 +959,7 @@ text-transform: uppercase;
   color: #000;
   display: inline-block;
   font-size: 12px;
-  left: 30px;
+  left: 15px;
   padding: 0;
   position: absolute;
   text-align: center;
@@ -1056,7 +1060,7 @@ text-transform: uppercase;
     background-size: 60%;
     opacity: 1 !important;
     transition: 0.3s ease;
-    margin: 0 1.3rem;
+    margin: 0rem 1.3rem 0rem 0rem;
     width: 40px;
     height: 40px;
     box-shadow: 0 0 5px #0003;
