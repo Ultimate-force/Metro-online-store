@@ -564,7 +564,7 @@
 }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 540px){
   .special-product h2{
     font-size: 20px;
   }
@@ -575,4 +575,132 @@
     display: none;
   }
     }
+
+@media only screen and (max-width: 768px){
+  .slider-header{
+    padding: 0px;
+   }
+  }
+
+
+
+
+  
+/* top categories slider */
+
+@media only screen and (max-width: 1020px){
+  .top-categories h2{
+    font-size: 24px;
+  }
+
+  .slider-header-cat{
+    padding: 0px;
+   }
+  }
+  
+  @media only screen and (max-width: 540px){
+    .top-categories h2{
+      font-size: 20px;
+    }
+    }
+  
+  @media only screen and (max-width: 540px){
+    .top-categories h2::before{
+      display: none;
+    }
+      }
+  
+  
+
+/* widget section */
+
+@media only screen and (max-width: 1199px){
+  .span-inner-des{
+    top: 10px;
+    left: 20px;
+}
+}
+
+@media only screen and (max-width: 980px){
+  .span-inner-des span:nth-of-type(1) {
+    padding: 0;
+}
+
+.span-inner-des span:nth-of-type(1)::after {
+  right: -70px;
+  top: 10px!important;
+  left: auto;
+}
+}
+
+@media only screen and (max-width: 1200px){
+  .span-inner-des span:nth-of-type(1) {
+    font-size: 18px;
+}
+
+.span-inner-des span:nth-of-type(1)::after {
+  top: 28px;
+}
+
+.span-inner-des span:nth-of-type(2) {
+  font-size: 24px;
+}
+}
+
+@media only screen and (max-width: 980px){
+  .span-inner-des span:nth-of-type(1) {
+    font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 1px){
+  .span-inner-des span:nth-of-type(1) {
+    font-size: 15px;
+}
+
+.span-inner-des span:nth-of-type(2) {
+  font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .span-inner-des span:nth-of-type(2) {
+    display: none;
+}
+
+.span-inner-des {
+  top: 20px;
+}
+}
+
+@media only screen and (max-width: 479px){
+  .span-inner-des span:nth-of-type(1) {
+    font-size: 12px;
+}
+
+  .span-inner-des span:nth-of-type(1)::after{
+    display: none;
+  }
+
+  .span-inner-des {
+    top: 10px;
+    left: 15px;
+}
+}
+
+/* beast deals section */
+
+@media only screen and (max-width: 1200px){
+  .span-inner-des__best span:nth-of-type(2) {
+    font-size: 26px;
+}
+}
+
+@media only screen and (max-width: 400px){
+  .best-img{
+    display: none;
+}
+}
+
+    
 

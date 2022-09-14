@@ -106,7 +106,82 @@ $(document).ready(function(){
         }
 ]
     });
-     
+
+
+    // category slider
+
+    $('.cat-slider').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 5,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        appendArrows:$('.slider-header-cat'),
+           responsive: [
+           {
+              breakpoint: 1250,
+              settings: {
+                  slidesToShow: 4
+             }
+           },{
+              breakpoint: 1020,
+              settings: {
+                 slidesToShow: 3
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 2
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
+
+
+    // Deals slider
+    
+
+    $('.deals-slider').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 2,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        appendArrows:$('.slider-header-deals'),
+           responsive: [
+           {
+              breakpoint: 1200,
+              settings: {
+                  slidesToShow: 3
+             }
+           },{
+              breakpoint: 1060,
+              settings: {
+                 slidesToShow: 2
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 1
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
+
 });
 
 
