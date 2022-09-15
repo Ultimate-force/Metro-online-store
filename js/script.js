@@ -182,6 +182,43 @@ $(document).ready(function(){
   ]
       });
 
+
+    // customers slider
+
+    $('.customers-slider').slick({
+        infinite: true,
+        dots: false,
+        slidesToShow: 3,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        appendArrows:$('.slider-header-customers'),
+           responsive: [
+           {
+              breakpoint: 1200,
+              settings: {
+                  slidesToShow: 3
+             }
+           },{
+              breakpoint: 1060,
+              settings: {
+                 slidesToShow: 2
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 1
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
+
 });
 
 

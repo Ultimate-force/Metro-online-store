@@ -694,11 +694,40 @@
   .span-inner-des__best span:nth-of-type(2) {
     font-size: 26px;
 }
+
+.best-img{
+   height: auto;
+}
+
+.best-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+}
+
+
+.best-img::before{
+    bottom: 15px;
+}
 }
 
 @media only screen and (max-width: 400px){
   .best-img{
     display: none;
+}
+}
+
+@media only screen and (max-width: 1009px){
+  .span-inner-des__best span:nth-of-type(2) {
+    font-size: 22px;
+}
+}
+
+@media only screen and (max-width: 861px){
+  .span-inner-des__best span:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 35px;
 }
 }
 

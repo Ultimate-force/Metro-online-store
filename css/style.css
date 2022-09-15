@@ -1333,6 +1333,10 @@ text-transform: uppercase;
 
 /* widget section */
 
+.widget{
+  background: linear-gradient(0deg, #f5f5f5 60%, #fff 0%);
+}
+
 .widget-img{
   position: relative;
   cursor: pointer;
@@ -1417,6 +1421,7 @@ text-transform: uppercase;
 
 .best-deals{
   background: #f5f5f5;
+  padding: 0px 0px 60px 0px;
 }
 
 .slider-header-deals{
@@ -1521,17 +1526,25 @@ text-transform: uppercase;
 .best-img{
   position: relative;
   text-align: center;
+  max-width: max-content;
+  margin: auto;
+  border-radius: 0px 0px 10px 10px;
+  height: 561px;
+  overflow: hidden;
 }
 
-.best-img img{
+.best-img img {
   max-width: 100%;
   border-radius: 10px;
+  height: 561px;
+  width: 518px;
 }
+
 
 .best-img::before{
     background-color: rgba(255,255,255,.3);
     content: "";
-    bottom: 15px;
+    bottom: 10px;
     left: 10px;
     right: 10px;
     top: 10px;
@@ -1615,4 +1628,85 @@ text-transform: uppercase;
 
 .span-inner-des__best .slider_btn:hover a{
   color: #015ADE!important;
+}
+
+/* Customers review section */
+
+.slider-header-customers{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.customers h2{
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 800;
+  order: -1;
+  display: flex;
+  background-color: transparent;
+  height: 90px;
+  flex: 1;
+  align-items: center;
+}
+
+.customers h2::before{
+  content: '';
+  height: 5px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 0px;
+  background-color: #015ADE;
+}
+
+.testmonial-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 0px 25px 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  border: 1px solid #e2e2e2;
+}
+
+.testmonial-image img{
+  margin-top: -50px;
+}
+
+.testmonial-description{
+  width: 83%;
+}
+
+.testmonial-description h4{
+  text-transform: capitalize;
+  color: #000;
+  font-weight: 800;
+  position: relative;
+  padding-top: 10px;
+  margin-bottom:10px!important;
+  font-size: 18px;
+  line-height: 20px;
+  margin-right: 0;
+  letter-spacing: 0.5px;
+}
+
+.testmonial-description p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #707070;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  padding-bottom: 15px;
+
+}
+
+.testmonial-description blockquote{
+  text-align: center;
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 500;
+  color: #707070;
 }
