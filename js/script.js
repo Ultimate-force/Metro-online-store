@@ -185,6 +185,7 @@ $(document).ready(function(){
 
     // customers slider
 
+    
     $('.customers-slider').slick({
         infinite: true,
         dots: false,
@@ -194,29 +195,19 @@ $(document).ready(function(){
         draggable: true,
         speed: 200,
         appendArrows:$('.slider-header-customers'),
-           responsive: [
-           {
-              breakpoint: 1200,
-              settings: {
-                  slidesToShow: 3
-             }
-           },{
-              breakpoint: 1060,
-              settings: {
-                 slidesToShow: 2
-             }
-           },{
-              breakpoint: 768,
-              settings: {
-                 slidesToShow: 1
-             }
-          },{
-              breakpoint: 540,
-              settings: {
-                 slidesToShow: 1
-             }
-          }
-  ]
+        responsive: [
+            {
+               breakpoint: 1200,
+               settings: {
+                   slidesToShow: 2
+              }
+            },{
+               breakpoint: 590,
+               settings: {
+                  slidesToShow: 1
+              }
+            }
+   ]
       });
 
 });

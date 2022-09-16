@@ -1669,7 +1669,13 @@ text-transform: uppercase;
   padding: 0px 25px 20px;
   border-radius: 10px;
   margin-top: 50px;
+  margin: 50px 15px;
   border: 1px solid #e2e2e2;
+  transition: 0.5s;
+}
+
+.testmonial-wrapper:hover{
+  box-shadow: 0 0 5px #0003;
 }
 
 .testmonial-image img{
@@ -1677,7 +1683,7 @@ text-transform: uppercase;
 }
 
 .testmonial-description{
-  width: 83%;
+  width: 90%;
 }
 
 .testmonial-description h4{
@@ -1691,6 +1697,12 @@ text-transform: uppercase;
   line-height: 20px;
   margin-right: 0;
   letter-spacing: 0.5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.testmonial-description h4:hover{
+  color: #015ADE;
 }
 
 .testmonial-description p{
@@ -1700,7 +1712,7 @@ text-transform: uppercase;
   letter-spacing: 0.5px;
   line-height: 18px;
   padding-bottom: 15px;
-
+  cursor: pointer;
 }
 
 .testmonial-description blockquote{

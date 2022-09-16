@@ -690,6 +690,25 @@
 
 /* beast deals section */
 
+@media only screen and (max-width: 1020px){
+  .best-deals h2{
+    font-size: 24px;
+  }
+  }
+  
+  @media only screen and (max-width: 540px){
+    .best-deals h2{
+      font-size: 20px;
+    }
+    }
+  
+  @media only screen and (max-width: 540px){
+    .best-deals h2::before{
+      display: none;
+    }
+}
+
+
 @media only screen and (max-width: 1200px){
   .span-inner-des__best span:nth-of-type(2) {
     font-size: 26px;
@@ -730,6 +749,64 @@
     line-height: 35px;
 }
 }
+
+ /* Customer review section */
+
+ @media only screen and (max-width: 1020px){
+  .customers h2{
+    font-size: 24px;
+  }
+  }
+  
+  @media only screen and (max-width: 540px){
+    .customers h2{
+      font-size: 20px;
+    }
+    }
+  
+  @media only screen and (max-width: 540px){
+    .customers h2::before{
+      display: none;
+    }
+      }
+
+
+
+
+  
+
+  @media only screen and (max-width: 979px){
+    .testmonial-description h4{
+      font-size: 16px;
+    }
+    .testmonial-description blockquote{
+      font-size: 14px;
+      line-height: 28px;
+    }
+
+    .testmonial-image img{
+      height: 85px;
+    }
+    }
+
+  @media only screen and (max-width: 767px){
+    .testmonial-description blockquote{
+      line-height: 24px;
+    }
+
+    .testmonial-image img{
+      height: 80px;
+    }
+    }
+
+  @media only screen and (max-width: 363px){
+    .testmonial-description {
+      width: 95%;
+  }
+    }
+
+  
+  
 
     
 
