@@ -71,6 +71,8 @@ $(document).ready(function(){
     }) 
 
 
+    
+
     // product-carousel
 
     $('.product-slider').slick({
@@ -210,8 +212,64 @@ $(document).ready(function(){
    ]
       });
 
+    
+    // Featured product slider 1
+
+    $('.featured-slider').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 5,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        appendArrows:$('.slider-header-featured'),
+           responsive: [
+           {
+              breakpoint: 1250,
+              settings: {
+                  slidesToShow: 4
+             }
+           },{
+              breakpoint: 1020,
+              settings: {
+                 slidesToShow: 3
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 2
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
+
+
 });
 
+
+// Featured slider filters
+
+const filterBox = document.querySelectorAll('.featured-slider');
+
+document.querySelector('.featured-filters').addEventListener('click', (event) => {
+    if(event.target.tagName !== 'SPAN') return false;
+
+    let filterClass = event.target.dataset['f'];
+    console.log(filterClass);
+
+    filterBox.forEach(elem => {
+        elem.classList.remove('hide');
+        if (!elem.classList.contains(filterClass)) {
+            elem.classList.add('hide');
+        }
+    });
+});
 
 
 

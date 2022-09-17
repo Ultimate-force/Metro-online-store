@@ -750,6 +750,8 @@
 }
 }
 
+
+
  /* Customer review section */
 
  @media only screen and (max-width: 1020px){
@@ -770,11 +772,7 @@
     }
       }
 
-
-
-
-  
-
+      
   @media only screen and (max-width: 979px){
     .testmonial-description h4{
       font-size: 16px;
@@ -804,6 +802,12 @@
       width: 95%;
   }
     }
+
+  @media only screen and (max-width: 1020px){
+    .slider-header-customers {
+        padding: 0px;
+    }
+  }
 
   
   

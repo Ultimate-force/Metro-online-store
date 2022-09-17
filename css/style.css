@@ -1632,10 +1632,14 @@ text-transform: uppercase;
 
 /* Customers review section */
 
+.customers{
+  padding: 0px 0px 80px 0px;
+}
 .slider-header-customers{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-top: 50px;
 }
 
 .customers h2{
@@ -1721,4 +1725,68 @@ text-transform: uppercase;
   line-height: 34px;
   font-weight: 500;
   color: #707070;
+}
+
+
+
+/* Featured product section */
+
+
+.featured-product{
+  padding: 0px 0px 80px 0px;
+  background: #f5f5f5;
+}
+.slider-header-featured{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+
+.featured-product h2{
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 800;
+  order: -1;
+  display: flex;
+  background-color: transparent;
+  height: 90px;
+  flex: 1;
+  align-items: center;
+}
+
+.featured-product h2::before{
+  content: '';
+  height: 5px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 0px;
+  background-color: #015ADE;
+}
+
+.featured-filters{
+  order: -1;
+  padding: 0px 6px 0px 0px;
+}
+
+.featured-filters span{
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 0px 25px;
+  font-weight: bold !important;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.featured-filters span:hover{
+  color: #015ADE;
+  border-color: #015ADE;
+}
+
+.hide{
+  display: none!important;
 }
