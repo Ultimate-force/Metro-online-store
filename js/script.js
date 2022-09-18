@@ -213,9 +213,9 @@ $(document).ready(function(){
       });
 
     
-    // Featured product slider 1
+    // Featured product slider 
 
-    $('.featured-slider').slick({
+    $('.featured-slider-featured').slick({
         infinite: false,
         dots: false,
         slidesToShow: 5,  
@@ -223,7 +223,8 @@ $(document).ready(function(){
         adaptiveHeight: true,
         draggable: true,
         speed: 200,
-        appendArrows:$('.slider-header-featured'),
+        appendArrows:$('.slider-header-filter'),
+        asNavFor: '.featured-slider-bestselling, .featured-slider-latest',
            responsive: [
            {
               breakpoint: 1250,
@@ -250,31 +251,88 @@ $(document).ready(function(){
       });
 
 
-});
+
+    $('.featured-slider-bestselling').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 5,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        arrows: false,
+        asNavFor: '.featured-slider-latest, .featured-slider-featured',
+           responsive: [
+           {
+              breakpoint: 1250,
+              settings: {
+                  slidesToShow: 4
+             }
+           },{
+              breakpoint: 1020,
+              settings: {
+                 slidesToShow: 3
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 2
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
+
+    $('.featured-slider-latest').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 5,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        asNavFor: '.featured-slider-bestselling, .featured-slider-featured',
+        arrows: false,
+           responsive: [
+           {
+              breakpoint: 1250,
+              settings: {
+                  slidesToShow: 4
+             }
+           },{
+              breakpoint: 1020,
+              settings: {
+                 slidesToShow: 3
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 2
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
 
 
-// Featured slider filters
+    // Featured slider filters
 
-const filterBox = document.querySelectorAll('.featured-slider');
-
-document.querySelector('.featured-filters').addEventListener('click', (event) => {
-    if(event.target.tagName !== 'SPAN') return false;
-
-    let filterClass = event.target.dataset['f'];
-    console.log(filterClass);
-
-    filterBox.forEach(elem => {
-        elem.classList.remove('hide');
-        if (!elem.classList.contains(filterClass)) {
-            elem.classList.add('hide');
-        }
+    $(document).on('click', '.featured-filters span', function(){
+        $(this).addClass('active').siblings().removeClass('active')
     });
+
+
+
 });
 
-
-
-
- 
  
 
      

@@ -1007,6 +1007,17 @@ text-transform: uppercase;
   color: #015ADE;
 }
 
+.price-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.price-wrapper span{
+  font-weight: bold!important;
+  font-size: 22px!important;
+  color: #000!important;
+}
+
 .image-block{
   position:absolute;
   z-index: -1;
@@ -1736,7 +1747,7 @@ text-transform: uppercase;
   padding: 0px 0px 80px 0px;
   background: #f5f5f5;
 }
-.slider-header-featured{
+.slider-header-filter{
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1787,6 +1798,11 @@ text-transform: uppercase;
   border-color: #015ADE;
 }
 
-.hide{
-  display: none!important;
+.featured-filters span.active{
+  color:#015ADE;
 }
+
+ 
+
+
+ 
