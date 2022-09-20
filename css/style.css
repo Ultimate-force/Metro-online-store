@@ -1754,6 +1754,20 @@ text-transform: uppercase;
   padding-top: 50px;
 }
 
+.slider-header-filter-2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+
+.slider-header-filter-3{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+
 .featured-product h2{
   font-size: 32px;
   text-transform: capitalize;
@@ -1801,6 +1815,10 @@ text-transform: uppercase;
 .featured-filters span.active{
   color:#015ADE;
 }
+
+  
+
+ 
 
  
 

@@ -224,7 +224,6 @@ $(document).ready(function(){
         draggable: true,
         speed: 200,
         appendArrows:$('.slider-header-filter'),
-        asNavFor: '.featured-slider-bestselling, .featured-slider-latest',
            responsive: [
            {
               breakpoint: 1250,
@@ -260,8 +259,7 @@ $(document).ready(function(){
         adaptiveHeight: true,
         draggable: true,
         speed: 200,
-        arrows: false,
-        asNavFor: '.featured-slider-latest, .featured-slider-featured',
+        appendArrows:$('.slider-header-filter-2'),
            responsive: [
            {
               breakpoint: 1250,
@@ -295,8 +293,7 @@ $(document).ready(function(){
         adaptiveHeight: true,
         draggable: true,
         speed: 200,
-        asNavFor: '.featured-slider-bestselling, .featured-slider-featured',
-        arrows: false,
+        appendArrows:$('.slider-header-filter-3'),
            responsive: [
            {
               breakpoint: 1250,
@@ -331,13 +328,48 @@ $(document).ready(function(){
 
 
 
-});
+    $('.featured-slider-bestselling').fadeOut();
+    $('.featured-slider-latest').fadeOut();  
 
- 
+    $('.slider-header-filter-2').fadeOut();  
+    $('.slider-header-filter-3').fadeOut();  
+    
+    $('.featured').click(function(){
+        $('.slider-header-filter').fadeIn(1000);  
+        $('.slider-header-filter-2').fadeOut(5);  
+        $('.slider-header-filter-3').fadeOut(5);  
+        $('.featured-slider-bestselling').fadeOut(5); // Скрывает начальное содержимое.
+        $('.featured-slider-latest').fadeOut(5); // Показывает содержимое диалога.
+        $('.featured-slider-featured').fadeIn(1000); // Показывает содержимое диалога.
+    });
+
+    $('.bestselling').click(function(){
+        $('.slider-header-filter').fadeOut(5);  
+        $('.slider-header-filter-2').fadeIn(1000);
+        $('.slider-header-filter-3').fadeOut(5);    
+        $('.featured-slider-featured').fadeOut(5); // Скрывает начальное содержимое.
+        $('.featured-slider-bestselling').fadeIn(1000); // Скрывает начальное содержимое.
+        $('.featured-slider-latest').fadeOut(5); // Показывает содержимое диалога.
+    });
+
+    $('.latest').click(function(){
+        $('.slider-header-filter').fadeOut(5);  
+        $('.slider-header-filter-2').fadeOut(5);  
+        $('.slider-header-filter-3').fadeIn(1000);  
+        $('.featured-slider-bestselling').fadeOut(5);  
+        $('.featured-slider-latest').fadeIn(1000); 
+        $('.featured-slider-featured').fadeOut(5);   
+    });
 
      
-       
+
+
+});
+
+
     
+
+ 
 
 
 

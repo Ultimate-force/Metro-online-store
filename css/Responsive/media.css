@@ -809,6 +809,45 @@
     }
   }
 
+
+  /* Featured filter slider section */
+
+
+    @media only screen and (max-width: 1020px){
+      .featured-product h2{
+        font-size: 24px;
+      }
+    }
+    
+    @media only screen and (max-width: 780px){
+      .featured-product h2{
+        display: none;
+      }
+
+      .featured-filters {
+        flex: 1;
+    }
+
+    .slider-header-filter, .slider-header-filter-2, .slider-header-filter-3 {
+      padding-top: 21px;
+      padding-bottom: 11px;
+    }
+      }
+
+    @media only screen and (max-width: 575px){
+      .featured-filters span{
+        font-size: 14px;
+        margin: 0 15px;
+      }
+    }
+
+    @media only screen and (max-width: 479px){
+      .featured-filters span{
+        font-size: 12px;
+        margin: 0 6px;
+      }
+    }
+  
   
   
 
