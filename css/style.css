@@ -1472,6 +1472,8 @@ text-transform: uppercase;
   border-radius: 10px 10px 0px 0px;
 }
 
+
+
 .product-detail-wrapper__deals{
   background: #fff;
   padding: 10px 15px 20px 15px;
@@ -1639,6 +1641,41 @@ text-transform: uppercase;
 
 .span-inner-des__best .slider_btn:hover a{
   color: #015ADE!important;
+}
+
+
+
+
+
+/* best deals timer styles */
+
+.clock{
+  display: flex;
+  position: absolute;
+  top: 10rem;
+  left: 2.6rem;
+}
+
+.clock div{
+  width: 55px;
+  height: 55px;
+  background:#f5f5f5;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.clock .text{
+  font-size: 12px;
+  font-weight: initial;
+  color: black;
+  display: block;
+  text-align: center;
+}
+.clock div span:nth-of-type(1){
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Customers review section */
