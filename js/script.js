@@ -249,6 +249,57 @@ $(document).ready(function(){
   ]
       });
 
+    
+    // logo slider 
+
+    $('.logo-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: false,
+        dots: false,
+        slidesToShow: 6,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        easing: 'ease',
+        arrows: false,
+           responsive: [
+           {
+              breakpoint: 1250,
+              settings: {
+                  slidesToShow: 5
+             }
+           },{
+              breakpoint: 888,
+              settings: {
+                 slidesToShow: 5
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 4
+             }
+          },{
+            breakpoint: 670,
+            settings: {
+               slidesToShow: 3
+           }
+        },{
+              breakpoint: 500,
+              settings: {
+                 slidesToShow: 2
+             }
+          }
+  ]
+
+  });
+
+  function restart() {
+    $('.logo-slider').slick('slickGoTo', 0);
+  }
+
+
     // Featured slider filters --active
 
     $(document).on('click', '.featured-filters span', function(){

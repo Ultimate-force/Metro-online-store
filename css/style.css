@@ -1858,12 +1858,14 @@ text-transform: uppercase;
 /* Banners section */
 
 .banners{
-
+  background: linear-gradient(180deg, #f5f5f5 50%, #fff 0%);
 }
 
 .banner-img{
   position: relative;
   border-radius: 0px 0px 10px 10px;
+  display: flex;
+  align-items: center;
 }
 
 .banner-img::before{
@@ -1895,10 +1897,9 @@ text-transform: uppercase;
 
 .span-inner-banner {
   left: 3%;
-  top: 15%;
   position: absolute;
   z-index: 2;
-  width: 64%;
+  width: 63%;
 }
 
 .span-inner-banner .slider_btn{
@@ -1959,6 +1960,13 @@ text-transform: uppercase;
   margin: 10px 0;
 }
  
+
+ /* Logo slider section */
+
+.logo-slider-section{
+  margin-top: 80px;
+  margin-bottom: 80px!important;
+}
 
  
 
