@@ -1871,7 +1871,7 @@ text-transform: uppercase;
 .banner-img::before{
   background-color: rgba(255,255,255,.3);
   content: "";
-  bottom: 16px;
+  bottom: 10px;
   left: 10px;
   right: 10px;
   top: 10px;

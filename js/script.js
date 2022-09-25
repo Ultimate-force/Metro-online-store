@@ -261,7 +261,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         adaptiveHeight: true,
         draggable: true,
-        speed: 200,
+        speed: 800,
         easing: 'ease',
         arrows: false,
            responsive: [
@@ -295,10 +295,11 @@ $(document).ready(function(){
 
   });
 
-  function restart() {
-    $('.logo-slider').slick('slickGoTo', 0);
-  }
-
+  $('.logo-slider').on('afterChange', function(event, slick, currentSlide){
+    if (currentSlide == 4) { 
+        $('.logo-slider').slick('slickGoTo', 0);
+      }
+  });
 
     // Featured slider filters --active
 
@@ -310,6 +311,7 @@ $(document).ready(function(){
 
 });
 
+    // best deals product countdown
 
 let countDownDate = new Date("October 14, 2023 15:37:25").getTime();
 
