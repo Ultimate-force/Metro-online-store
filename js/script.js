@@ -161,7 +161,7 @@ $(document).ready(function(){
         appendArrows:$('.slider-header-deals'),
            responsive: [
            {
-              breakpoint: 1200,
+              breakpoint: 1251,
               settings: {
                   slidesToShow: 3
              }
@@ -295,11 +295,86 @@ $(document).ready(function(){
 
   });
 
-  $('.logo-slider').on('afterChange', function(event, slick, currentSlide){
-    if (currentSlide == 4) { 
-        $('.logo-slider').slick('slickGoTo', 0);
-      }
-  });
+    // logo slider repeat
+
+    $('.logo-slider').on('afterChange', function(event, slick, currentSlide){
+        if (currentSlide == 4) { 
+            $('.logo-slider').slick('slickGoTo', 0);
+        }
+    });
+
+
+    //Top Rated Slider
+
+    $('.topRated-slider').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 3,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        appendArrows:$('.slider-header-topRated'),
+           responsive: [
+           {
+              breakpoint: 1241,
+              settings: {
+                  slidesToShow: 4
+             }
+           },{
+              breakpoint: 1020,
+              settings: {
+                 slidesToShow: 3
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 2
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
+    
+    // Best seller slider 
+
+    $('.bestSeller-slider').slick({
+        infinite: true,
+        dots: false,
+        slidesToShow: 3,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        appendArrows:$('.slider-header-bestSeller'),
+           responsive: [
+           {
+              breakpoint: 1241,
+              settings: {
+                  slidesToShow: 4
+             }
+           },{
+              breakpoint: 1020,
+              settings: {
+                 slidesToShow: 3
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 2
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
 
     // Featured slider filters --active
 
