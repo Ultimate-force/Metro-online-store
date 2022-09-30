@@ -249,12 +249,18 @@ $(document).ready(function(){
   ]
       });
 
+      // Featured slider filters --active
+
+    $(document).on('click', '.featured-filters span', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+    });
+
     
     // logo slider 
 
     $('.logo-slider').slick({
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1500,
         infinite: false,
         dots: false,
         slidesToShow: 6,  
@@ -376,13 +382,67 @@ $(document).ready(function(){
   ]
       });
 
-    // Featured slider filters --active
+       // Our latest blog section slider 
 
-    $(document).on('click', '.featured-filters span', function(){
-        $(this).addClass('active').siblings().removeClass('active')
-    });
+    $('.latestBlog-slider').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 3,  
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        draggable: true,
+        speed: 200,
+        appendArrows:$('.slider-header-latestBlog'),
+           responsive: [
+           {
+              breakpoint: 1241,
+              settings: {
+                  slidesToShow: 4
+             }
+           },{
+              breakpoint: 1020,
+              settings: {
+                 slidesToShow: 3
+             }
+           },{
+              breakpoint: 768,
+              settings: {
+                 slidesToShow: 2
+             }
+          },{
+              breakpoint: 540,
+              settings: {
+                 slidesToShow: 1
+             }
+          }
+  ]
+      });
+
+
+    
 
   
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        infinite: true,
+        keyboard: {
+            Escape: "close",
+            Delete: "close",
+            Backspace: "close",
+            PageUp: "next",
+            PageDown: "prev",
+            ArrowUp: "next",
+            ArrowDown: "prev",
+            ArrowRight: "next",
+            ArrowLeft: "prev",
+        },
+        Thumbs: {
+            Carousel: {
+              Sync: {
+                friction: 0.9,
+              },
+            },
+          },
+      });
 
 });
 
