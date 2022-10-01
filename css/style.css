@@ -2211,10 +2211,9 @@ text-transform: uppercase;
   position: relative;
   margin: 2px 0px 0px;
   margin-bottom: 2px !important;
-  box-shadow: 0 0 4px rgb(0 0 0 / 12%);
 }
 
-.p-slide:hover .wrapper-latest {
+.p-slide:hover .product-detail-wrapper {
   box-shadow: 0 0 20px #0003;
 }
 
@@ -2245,6 +2244,12 @@ text-transform: uppercase;
 
 .wrapper-latest .product-detail-wrapper{
   width: 25.1rem;
+  box-shadow: 0 0 4px rgb(0 0 0 / 12%);
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
 }
 
 .wrapper-latest .product-detail-wrapper span:nth-of-type(1){
@@ -2269,6 +2274,7 @@ text-transform: uppercase;
   margin: 10px 0 0px;
   line-height: 30px;
   font-weight: 500;
+  display: inline-block;
   font-size: 16px;
   color: #707070;
   letter-spacing: 0.5px;
@@ -2282,6 +2288,7 @@ text-transform: uppercase;
   line-height: 35px;
   color: #000;
   padding-top: 10px;
+  padding-bottom: 0px;
   white-space: break-spaces;
   transition: all 300ms ease;
   -webkit-transition: all 300ms ease;
@@ -2291,9 +2298,14 @@ text-transform: uppercase;
   cursor: pointer;
 }
 
+.image-block-latest{
+  position: relative;
+}
+
 .wrapper-latest .image-block-hover{
   background: rgba(225, 225, 225, 0.4) none repeat scroll 0 0;
-  bottom: 17.1rem;
+  border-radius: 10px 10px 0px 0px;
+  bottom: 0;
   left: 0;
   margin: 0;
   opacity: 0;
@@ -2303,6 +2315,9 @@ text-transform: uppercase;
   position: absolute;
   right: 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   transition: all 300ms ease;
   -webkit-transition: all 300ms ease;
@@ -2311,12 +2326,7 @@ text-transform: uppercase;
   -o-transition: all 300ms ease;
 }
 
-.links{
-  position: absolute;
-  text-align: center;
-  top: 44%;
-  width: 100%;
-}
+ 
 
 .links a{
   background-color: #000;

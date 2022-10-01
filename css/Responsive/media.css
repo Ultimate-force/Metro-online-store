@@ -1147,6 +1147,24 @@
       }
     }
 
+    @media only screen and (max-width: 1020px){
+      .best-seller h2{
+        font-size: 24px;
+      }
+      }
+      
+      @media only screen and (max-width: 540px){
+        .best-seller h2{
+          font-size: 20px;
+        }
+        }
+      
+      @media only screen and (max-width: 540px){
+        .best-seller h2::before{
+          display: none;
+        }
+          }
+
     @media only screen and (max-width: 1199px){ 
       .best-seller .span-inner-des__best span:nth-of-type(1) {
           font-size: 24px;
@@ -1178,7 +1196,85 @@
     }
   }
   
-  
+  /* Out latest blog  section */
+
+
+  @media only screen and (max-width: 1020px){
+    .latest-blog h2{
+      font-size: 24px;
+    }
+    }
+    
+    @media only screen and (max-width: 540px){
+      .latest-blog h2{
+        font-size: 20px;
+      }
+      }
+    
+    @media only screen and (max-width: 540px){
+      .latest-blog h2::before{
+        display: none;
+      }
+        }
+
+  @media screen and (max-width:1260px) {
+    .image-block-latest img {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+  }
+    .latest-blog .p-slide{
+      padding: 0px 8px;
+    }
+
+    .wrapper-latest .product-detail-wrapper {
+      width: auto;
+  }
+
+  .wrapper-latest .product-detail-wrapper span:nth-of-type(2) {
+    margin: 9px 0px 0px;
+  }
+  }
+
+  @media screen and (max-width:768px) {
+    .wrapper-latest .product-detail-wrapper span:nth-of-type(1){
+      font-size: 14px;
+    }
+
+    .wrapper-latest .product-detail-wrapper span:nth-of-type(2) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      margin: 0;
+  }
+
+    .wrapper-latest .product-detail-wrapper h3{
+      font-size: 22px;
+     }
+  }
+
+  @media screen and (max-width:575px) {
+    .wrapper-latest .product-detail-wrapper h3{
+      font-size: 20px;
+     }
+
+     .wrapper-latest .product-detail-wrapper span:nth-of-type(2) {
+       margin: 0;
+  } 
+  }
+
+  @media screen and (max-width:610px) {
+    .wrapper-latest .product-detail-wrapper h3{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+
+   
   
   
 

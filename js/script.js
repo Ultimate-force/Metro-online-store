@@ -395,32 +395,22 @@ $(document).ready(function(){
         appendArrows:$('.slider-header-latestBlog'),
            responsive: [
            {
-              breakpoint: 1241,
+              breakpoint: 1260,
               settings: {
-                  slidesToShow: 4
+                  slidesToShow: 2
              }
-           },{
-              breakpoint: 1020,
-              settings: {
-                 slidesToShow: 3
-             }
-           },{
-              breakpoint: 768,
-              settings: {
-                 slidesToShow: 2
-             }
-          },{
-              breakpoint: 540,
-              settings: {
-                 slidesToShow: 1
-             }
-          }
+           }, {
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 1
+           }
+         } 
   ]
       });
 
 
     
-
+    //   Our  latest blog images gallery popup 
   
       Fancybox.bind('[data-fancybox="gallery"]', {
         infinite: true,
