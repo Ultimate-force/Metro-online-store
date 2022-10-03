@@ -816,9 +816,15 @@
   }
     }
 
-  @media only screen and (max-width: 1020px){
+  @media only screen and (max-width: 1024px){
     .slider-header-customers {
-        padding: 0px;
+        padding-top: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 979px){
+    .slider-header-customers {
+        padding-top: 0px;
     }
   }
 
@@ -1236,6 +1242,12 @@
   }
   }
 
+  @media only screen and (max-width: 980px){ 
+    .latest-blog {
+        margin-top: 10px;
+        margin-bottom: 50px!important;
+    }
+  }
   @media screen and (max-width:768px) {
     .wrapper-latest .product-detail-wrapper span:nth-of-type(1){
       font-size: 14px;
@@ -1273,8 +1285,110 @@
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
     }
+  }
 
+  @media screen and (max-width: 1000px){ 
+    .wrapper-latest .product-detail-wrapper h3 {
+        font-size: 22px;
+    }
+  }
+
+  
+  @media only screen and (max-width: 768px){ 
+    .latest-blog {
+        margin-top: 0px!important;
+    }
+
+    .wrapper-latest .product-detail-wrapper span:nth-of-type(1){
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 1259px){ 
+    .latest-blog {
+      margin-top: 25px;
+    }
+  }
    
+
+/* Services */
+
+@media only screen and (max-width: 1320px){ 
+  .service-description div {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1200px){ 
+  .service-content{
+    display:block;
+  }
+   
+  .service-img {
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-description{
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .service-description div{
+    font-size: 16px;
+  }
+}
+
+
+@media (min-width: 992px){ 
+  .services .col-lg-2 {
+    flex: 0 0 auto!important;
+    width: 20%!important;
+  }
+}
+
+@media (min-width: 576px){ 
+  .services .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .services .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 980px){ 
+  .service-description {
+    text-align: inherit;
+    padding-top: 2px;
+  }
+
+  .service-img {
+    margin: 0;
+    padding-right: 16px;
+  }
+
+  .service-content {
+    padding-bottom: 55px;
+    align-items: initial;
+    display: flex;
+  }
+}
+
+
+@media only screen and (max-width: 576px){ 
+  .services .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .service-content {
+    padding-bottom: 40px;
+  }
+}
   
   
 

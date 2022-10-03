@@ -1338,6 +1338,7 @@ text-transform: uppercase;
 .slider-images img{
   margin: 0px auto 0;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 
@@ -1681,7 +1682,6 @@ text-transform: uppercase;
 /* Customers review section */
 
 .customers{
-  padding: 0px 0px 80px 0px;
   background: linear-gradient(0deg, #f5f5f5 40%, #fff 0%);
 }
 .slider-header-customers{
@@ -2166,6 +2166,11 @@ text-transform: uppercase;
 
 /* Our latest blog */
 
+  .latest-blog{
+    margin-top: 55px;
+    margin-bottom: 80px!important;
+  }
+
 .slider-header-latestBlog{
   display: flex;
   align-items: center;
@@ -2213,7 +2218,7 @@ text-transform: uppercase;
   margin-bottom: 2px !important;
 }
 
-.p-slide:hover .product-detail-wrapper {
+.latestBlog-slider .p-slide:hover .product-detail-wrapper {
   box-shadow: 0 0 20px #0003;
 }
 
@@ -2355,4 +2360,65 @@ text-transform: uppercase;
 .p-slide:hover .wrapper-latest .links a{
   opacity: 1;
   transform: scale(1);
+}
+
+
+/* Services */
+
+.services{
+  padding: 30px 0px 30px 0px;
+  background-color: #F5F5F5;
+}
+.service-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-content:hover{
+  cursor: crosshair;
+}
+
+.service-content:hover .service-img img{
+  filter: none;
+}
+
+.service-content:hover .service-description div{
+  color: #015ADE;
+}
+
+.services .col-lg-2{
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.service-img{
+  padding-right: 16px;
+}
+
+.service-img img{
+  filter: brightness(0);
+  transition: 0.3s ease;
+}
+
+.service-description div{
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #000;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.service-description span{
+  margin: 5px auto 0;
+  color: #707070;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: initial;
+  width: 100%;
+  display: block;
+  transition: 0.3s ease;
 }
