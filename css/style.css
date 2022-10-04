@@ -2422,3 +2422,280 @@ text-transform: uppercase;
   display: block;
   transition: 0.3s ease;
 }
+
+
+
+/* FOOTER */
+
+.footer{
+  background-color: #F5F5F5;
+}
+
+.download-links ul, .s-media ul{
+  padding-left: 0!important;
+}
+
+.footer-widget-area{
+  position: relative;
+  width: 100%;
+  padding: 40px 0 50px;
+  display: inline-block;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.footer-logo{
+  margin-bottom: 29px!important;
+}
+
+.footer-logo img{
+  max-width: 100%;
+}
+
+.text-widget{
+  text-align: left;
+  line-height: 45px;
+  font-size: 16px;
+  color: #000;
+  width: 93%;
+}
+
+.download-links span{
+  display: inline-block;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  line-height: 18px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #015ADE;
+  margin-right: 20px;
+}
+
+.download-links{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+ul.stores{
+  display: flex;
+  align-items: center;
+}
+
+ul.stores li{
+  list-style-type: none;
+}
+
+.s1{
+  background-repeat: no-repeat;
+  height: 41px;
+  width: 113px;
+  background-image: url(../images/s1.png);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  background-size: 113px;
+}
+
+.s2{
+  background-repeat: no-repeat;
+  height: 41px;
+  width: 112px;
+  background-image: url(../images/s2.png);
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 112px;
+}
+
+.s-media{
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.title h3{
+  display: inline-block;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #015ADE;
+  margin-right: 20px;
+}
+
+ul.follow-us li{
+  list-style-type: none;
+}
+
+ul.follow-us li a{
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 47px !important;
+  box-sizing: content-box;
+  transition: all 0.3s ease 0s;
+  background-color: #fff;
+  box-shadow: 0 0 5px #0003;
+}
+
+ul.follow-us li a:nth-of-type(1){
+  margin: 0px 5px 0px 0px;
+}
+
+ul.follow-us li a:hover{
+  background-color: #015ADE;
+} 
+
+ul.follow-us li a:hover i{
+  color: #fff;
+}
+
+ul.follow-us li a i{
+  font-size: 20px;
+  line-height: 16px;
+  transition: all 0.3s ease 0s;
+  color: #000;
+}
+
+ .lft{
+  margin-left: 5%;
+ }
+
+.footer-information h3{
+  background: none;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-bottom: 35px !important;
+}
+
+ul.information-links{
+  width: 103%;
+  padding-left: 0;
+}
+
+ul.information-links li{
+  list-style-type: none;
+  padding: 0;
+  line-height: 45px;
+} 
+
+ul.information-links li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+
+ul.information-links li a:hover{
+  color: #015ADE;
+}
+
+.footer-category h3{
+  background: none;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-bottom: 35px !important;
+}
+
+ul.category-links{
+  padding-left: 0;
+}
+
+ul.category-links li{
+  list-style-type: none;
+  padding: 0;
+  line-height: 45px;
+}
+
+ul.category-links li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: all 0.3s ease 0s;
+}
+
+ul.category-links li a:hover{
+  color: #015ADE;
+}
+
+.footer-contact h3{
+  background: none;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 24px;
+  margin-bottom: 35px !important;
+}
+
+.email{
+  background: url(../images/mail.svg) no-repeat;
+  background-size: 22px;
+  padding-left: 30px;
+}
+
+.contact_email a{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+
+.contact_email a:hover{
+  color: #015ADE;
+}
+
+.address{
+  background: url(../images/foo_map.svg) no-repeat left 10px;
+  background-size: 22px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+.address_contact{
+  line-height: 45px;
+  width: 107%;
+}
+
+.phone{
+  background: url(../images/foo_call.svg) no-repeat 0px;
+  background-size: 22px;
+  padding-left: 30px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
