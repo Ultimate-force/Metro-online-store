@@ -588,6 +588,18 @@ let d = setInterval(function() {
 }, 1000);
 
 
+// Scroll top button
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("ScrollActive");
+  } else {
+    toTop.classList.remove("ScrollActive");
+  }
+})
+
  
 
 
