@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    // firsArrowFunction
+
     $('#customarrow').click(function() {
         $(this).toggleClass('customSelectOpen');
     }), function() { 
@@ -27,6 +30,7 @@ $(document).ready(function(){
 
 
     // visible dropdown menu
+
     $(function(){
         $('.category-list').click(function(){
             divTrigger = $('.category-list').index(this);
@@ -42,6 +46,7 @@ $(document).ready(function(){
     });
 
     // dropleft menu
+
     $("#li-hover").hover(
         function() {
          $('#megamenu-list', this).stop().fadeIn();
@@ -51,7 +56,8 @@ $(document).ready(function(){
     });
 
 
-    // navbar menu arrow
+    // navbar list menu dropdown and arrow
+
     (function() {
         document.querySelector('#down-click').addEventListener('click', function() {
             $('.sub-menu').toggleClass('closed');
@@ -61,6 +67,39 @@ $(document).ready(function(){
       })();
 
 
+    // Footer widget area dropdown 
+
+    const link = document.querySelectorAll('.information-links__media, .category-links__media, .footer-contact__media');
+  
+    for (const box of link) {
+      box.addEventListener('click', function handleClick() {
+        box.classList.toggle('closed');
+      });
+    }
+      
+    // const downclick = document.querySelectorAll('#down-click-footer');
+    // const link = document.querySelectorAll('.drpdwn');
+    // // const linkCat = document.querySelectorAll('.category-contact__media');
+    // // const linkCnt = document.querySelectorAll('.footer-contact__media');
+
+    // downclick.addEventListener('click', () => {
+    //   link.forEach(el => {
+    //     el.classList.toggle('closed');
+    //   })
+    // })
+
+    // (function() {
+    //   document.querySelector('#down-click-footer').addEventListener('click', function() {
+    //       $('.information-links__media').toggleClass('closed');
+    //       $('.category-links__media').toggleClass('closed');
+    //       $('.footer-contact__media').toggleClass('closed');
+    //       $('#down-click-footer').toggleClass('rotate');
+  
+    //   }, false);
+    // })();
+
+
+    // navbar mobile hamburger function
 
     $('.hamburger').click(function() {
         $('.mobile-menu').toggleClass('navbar-active');
