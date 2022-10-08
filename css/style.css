@@ -2471,6 +2471,14 @@ text-transform: uppercase;
   background-color: #F5F5F5;
 }
 
+.footer .none{
+  display: block;
+}
+
+.footer .footer-widget-area__media.none{
+  display: none;
+}
+
 .download-links ul, .s-media ul{
   padding-left: 0!important;
 }
