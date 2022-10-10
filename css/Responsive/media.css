@@ -602,13 +602,13 @@
     .top-categories h2{
       font-size: 20px;
     }
-    }
+   }
   
   @media only screen and (max-width: 540px){
     .top-categories h2::before{
       display: none;
     }
-      }
+  }
   
   
 
@@ -1766,4 +1766,15 @@
     width: 28px;
     height: 28px;
   } 
+}
+
+/* Scroll to top button */
+
+@media only screen and (max-width: 768px){
+  .ScrollActive{
+    right: 15px;
+    font-size: 28px;
+    width: 42px;
+    height: 42px;
+  }
 }
