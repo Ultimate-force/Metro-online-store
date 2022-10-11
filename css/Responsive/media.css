@@ -1778,3 +1778,23 @@
     height: 42px;
   }
 }
+
+/* Magnific pop up */
+
+@media only screen and (max-width: 460px){
+  .popUp-content{
+    width: 240px;
+  }
+
+  .header h3{
+    font-size: 18px;
+  }
+
+  .subheading{
+    font-size: 12px;
+  }
+
+  .inputs input[type=submit]{
+    font-size: 12px;
+  }
+}

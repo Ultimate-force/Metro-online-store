@@ -30,17 +30,19 @@ $(document).ready(function(){
 
 
     // visible dropdown menu
+    let elem = document.querySelector('.category-list');
 
     $(function(){
         $('.category-list').click(function(){
             divTrigger = $('.category-list').index(this);
-         
-            thisMegaMenu = $('.megamenu:eq('+divTrigger+')');      
+            thisMegaMenu = $('.megamenu:eq('+divTrigger+')');     
             $('.megamenu').fadeOut();
+
             if(thisMegaMenu.is(":not(':visible')")){    
             thisMegaMenu.fadeIn();
             }
             
+        
     });
        
     });
@@ -624,7 +626,25 @@ window.addEventListener("scroll", () => {
   }
 })
 
- 
 
+// PopUp open function
+
+let popupBg = document.querySelector(".popUp-overlay");
+let popUp =  document.querySelector(".popUp-wrapper")
+
+setTimeout(function(){
+  popupBg.classList.add("anim-bg");
+  popUp.classList.add("anim");
+},1000)
+
+// PopUp close button function
+
+ let close = document.querySelector(".popUp-close");
+  
+  close.addEventListener("click", myFunction);
+      function myFunction() {
+      popUp.classList.add("hinge");
+      $(".popUp-overlay").fadeOut(1000);
+    }
 
 
