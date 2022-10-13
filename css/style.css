@@ -20,6 +20,57 @@ img, svg {
   vertical-align: inherit;
 }
 
+/* Pre loader */
+
+#page-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  transition: all 1.3s ease 0.3s;
+  opacity: 1;
+  visibility: visible;
+  z-index: 100500;
+  overflow: hidden;
+}
+
+#page-preloader .preloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  transition: all 0.4s ease;
+}
+
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 300px;
+  transform: translate(-50%,-50%);
+}
+
+.object {
+  background: url(../images/loader.gif) no-repeat center center #fff;
+  width: 100%;
+  height: 100%;
+}
+
+#page-preloader.preloader .visible { 
+opacity: 1;
+transform: translate(-50%,-50%);
+}
+
+.unvisible{ 
+  z-index: -1!important;
+  opacity: 0!important;
+  visibility: hidden!important;
+}
+
 /* Scroll to top button */
 .to-top {
   background: white;
@@ -78,6 +129,10 @@ img, svg {
   align-items: center;
 }
 
+.red{
+  border: 1px solid red!important;
+}
+
 .popUp-wrapper{
   position: fixed;
   background-color: rgb(0, 0, 0, 0.8);
@@ -100,7 +155,6 @@ img, svg {
 }
 
 .header{
-  margin-bottom: 20px!important;
   text-align: center;
 }
 
@@ -115,6 +169,7 @@ img, svg {
   font-size: 14px;
   color: #777;
   margin-top: 9px;
+  margin-bottom: 20px!important;
   max-width: 350px;
 }
 

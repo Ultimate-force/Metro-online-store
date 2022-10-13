@@ -19,6 +19,17 @@
 
 <body>
 
+
+
+    <div id="page-preloader" class="">
+        <div class="preloader">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+            </div>
+        </div>
+    </div>
+
+
     <a href="#" class="to-top">
         <i class="fas fa-chevron-up"></i>
     </a>
@@ -33,11 +44,13 @@
                 <!-- /.header -->
                 <div class="sep"></div>
                 <!-- /.sep -->
-                <div class="inputs">
-                    <input type="email" name="" placeholder="Email">
-                    <input type="text" name="" placeholder="Name">
-                    <input type="submit" value="SIGN UP FOR NEWSLETTER NOW">
-                </div>
+                <form name="myForm" action="#" onsubmit="alert('it works'); return false" method="post">
+                    <div class="inputs">
+                        <input type="email" name="mail" placeholder="Email" required>
+                        <input type="text" name="text" onblur="requiredField(this)" placeholder="Name" required>
+                        <input type="submit" value="SIGN UP FOR NEWSLETTER NOW">
+                    </div>
+                  </form>
                 <!-- /.inputs -->
             </div>
             <!-- /.popUp-content -->

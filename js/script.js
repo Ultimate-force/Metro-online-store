@@ -635,7 +635,7 @@ let popUp =  document.querySelector(".popUp-wrapper")
 setTimeout(function(){
   popupBg.classList.add("anim-bg");
   popUp.classList.add("anim");
-},1000)
+},5000)
 
 // PopUp close button function
 
@@ -647,4 +647,46 @@ setTimeout(function(){
       $(".popUp-overlay").fadeOut(1000);
     }
 
+// Popup inputs validation function
 
+  let n = document.forms["myForm"]["text"]
+  let numb = /[0-9]/g;
+
+  n.oninput = function() { 
+  this.value = this.value.replace(numb, '') 
+  
+    }
+  
+
+
+  var input = document.getElementsByTagName('input');
+
+for (var i=0; i<input.length; i++){
+
+input[i].onblur = function() {
+  if (this.value == "") { 
+    this.className = "red";
+     
+  }
+};
+
+input[i].onfocus = function() {
+  if (this.className == 'red') { 
+    this.className = "";
+    
+  }
+};
+}
+
+// Pre-loader function
+
+    document.body.onload = function(){
+      
+      setTimeout(function(){
+        let preLoader = document.getElementById('page-preloader');
+
+        if(!preLoader.classList.contains('unvisible')){
+          preLoader.classList.add('unvisible');
+        }
+      }, 1000);
+    }
