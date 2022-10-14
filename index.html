@@ -44,11 +44,11 @@
                 <!-- /.header -->
                 <div class="sep"></div>
                 <!-- /.sep -->
-                <form name="myForm" action="#" onsubmit="alert('it works'); return false" method="post">
+                <form name="myForm" action="#" onsubmit="return false" method="post">
                     <div class="inputs">
-                        <input type="email" name="mail" placeholder="Email" required>
-                        <input type="text" name="text" onblur="requiredField(this)" placeholder="Name" required>
-                        <input type="submit" value="SIGN UP FOR NEWSLETTER NOW">
+                        <input type="email" id="empty" name="mail" placeholder="Email" required>
+                        <input type="text" id="empty" name="text" placeholder="Name" required>
+                        <input type="submit" id="send" value="SIGN UP FOR NEWSLETTER NOW">
                     </div>
                   </form>
                 <!-- /.inputs -->
@@ -3005,6 +3005,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script.js"></script>
 </body>
 

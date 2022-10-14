@@ -460,6 +460,34 @@ $(document).ready(function(){
           },
       });
 
+
+
+  // Sweet alert  function for popup after log in
+      $('#send').on('click', check);
+
+      function check() {
+        let filled = true;
+        $("#empty").each(function () {
+          if ($(this).val() !== '') {
+            $(".popUp-overlay").fadeOut(1000);
+            $(".popUp-wrapper").addClass("confirm");
+            setTimeout(() => {
+              Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Congrangulations ${document.getElementById("empty").value} ',
+                text: 'You sign in!',
+                showConfirmButton: false,
+                timer: 3000,
+                toast: true
+              })
+            }, 800)
+           
+          }
+        });
+        
+      }
+
 });
 
     // best deals product countdown
@@ -647,6 +675,7 @@ setTimeout(function(){
       $(".popUp-overlay").fadeOut(1000);
     }
 
+
 // Popup inputs validation function
 
   let n = document.forms["myForm"]["text"]
@@ -658,7 +687,7 @@ setTimeout(function(){
     }
   
 
-
+// If unputs is empty
   var input = document.getElementsByTagName('input');
 
 for (var i=0; i<input.length; i++){
@@ -677,6 +706,7 @@ input[i].onfocus = function() {
   }
 };
 }
+
 
 // Pre-loader function
 
