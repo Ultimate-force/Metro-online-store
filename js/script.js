@@ -658,7 +658,7 @@ window.addEventListener("scroll", () => {
 // PopUp open function
 
 let popupBg = document.querySelector(".popUp-overlay");
-let popUp =  document.querySelector(".popUp-wrapper")
+const popUp =  document.querySelector(".popUp-wrapper")
 
 setTimeout(function(){
   popupBg.classList.add("anim-bg");
@@ -675,6 +675,13 @@ setTimeout(function(){
       $(".popUp-overlay").fadeOut(1000);
     }
 
+    document.addEventListener("click", (e) => {
+      const click = e.composedPath().includes(popUp)
+      if(!click){
+        popUp.classList.add("hinge");
+        $(".popUp-overlay").fadeOut(1000);
+      }
+    })
 
 // Popup inputs validation function
 
