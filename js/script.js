@@ -462,34 +462,6 @@ $(document).ready(function(){
 
 
 
-  // Sweet alert  function for popup after log in
-      $('#send').on('click', check);
-
-      function check() {
-        let filled = true;
-        $("#empty").each(function () {
-          if ($(this).val() !== '') {
-            $(".popUp-overlay").fadeOut(1000);
-            $(".popUp-wrapper").addClass("confirm");
-            setTimeout(() => {
-              Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'Congrangulations ${document.getElementById("empty").value} ',
-                text: 'You sign in!',
-                showConfirmButton: false,
-                timer: 3000,
-                toast: true
-              })
-            }, 800)
-           
-          }
-        });
-        
-      }
-
-});
-
     // best deals product countdown
 
 let countDownDate = new Date("October 14, 2023 15:37:25").getTime();
@@ -683,7 +655,7 @@ setTimeout(function(){
       }
     })
 
-// Popup inputs validation function
+// Popup input text numbers block validation function
 
   let n = document.forms["myForm"]["text"]
   let numb = /[0-9]/g;
@@ -691,7 +663,7 @@ setTimeout(function(){
   n.oninput = function() { 
   this.value = this.value.replace(numb, '') 
   
-    }
+  }
   
 
 // If unputs is empty
@@ -702,17 +674,48 @@ for (var i=0; i<input.length; i++){
 input[i].onblur = function() {
   if (this.value == "") { 
     this.className = "red";
-     
   }
 };
 
 input[i].onfocus = function() {
   if (this.className == 'red') { 
     this.className = "";
-    
   }
+
 };
 }
+
+ // Sweet alert  function for popup after log in
+ $('#send').on('click', check);
+
+ function check() {
+     if ($('#text').val() !== '' && $('#email').val() !== '') {
+       $(".popUp-overlay").fadeOut(1000);
+       $(".popUp-wrapper").addClass("confirm");
+       setTimeout(() => {
+         Swal.fire({
+           position: 'top-end',
+           icon: 'success',
+           title: 'Congrangulations',
+           hideClass: {
+             popup: 'animate__animated animate__bounceOutRight'
+           },
+           text: 'You sign in!',
+           showConfirmButton: false,
+           timer: 3000,
+           toast: true
+         })
+       }, 800)
+      
+     }
+   
+ }
+
+
+ 
+
+});
+
 
 
 // Pre-loader function
