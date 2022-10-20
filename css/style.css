@@ -1068,8 +1068,6 @@ text-transform: uppercase;
   position: absolute;
   top: 11%;
   flex-direction: column;
-  /* align-items: center; */
-  /* display: grid; */
   left: 4%;
   width: 59%;
   text-align: left;
@@ -2536,7 +2534,7 @@ text-transform: uppercase;
 }
 
 .wrapper-latest .product-detail-wrapper{
-  width: 25.1rem;
+  width: 25.2rem;
   box-shadow: 0 0 4px rgb(0 0 0 / 12%);
   transition: all 300ms ease;
   -webkit-transition: all 300ms ease;

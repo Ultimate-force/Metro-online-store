@@ -667,7 +667,7 @@ setTimeout(function(){
   
 
 // If unputs is empty
-  var input = document.getElementsByTagName('input');
+  var input = document.getElementsByClassName('inp');
 
 for (var i=0; i<input.length; i++){
 
