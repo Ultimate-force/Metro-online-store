@@ -1489,11 +1489,11 @@ text-transform: uppercase;
 }
 
 .nav-links .next.page-numbers::before{
-  content: '\f105';
-  position: absolute;
-  font-family: FontAwesome;
-  font-size: 19px;
-  line-height: 17px;
+    content: '\f104';
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 19px;
+    line-height: 20px;
 }
 
 

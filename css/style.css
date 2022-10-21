@@ -571,6 +571,7 @@ transform: translate(-50%,-50%);
 .header-bottom ul.megamenu li{
   padding: 14px 14px;
   transition: 0.5s;
+  display: flex;
 }
 
 .header-bottom ul.megamenu li a{
@@ -586,9 +587,6 @@ transform: translate(-50%,-50%);
   content: '\f105';
   position: absolute;
   font-family: FontAwesome;
-  top: 6%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   left: auto;
   right: 10px;
 }

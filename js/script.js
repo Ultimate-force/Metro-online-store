@@ -30,22 +30,26 @@ $(document).ready(function(){
 
 
     // visible dropdown menu
-    let elem = document.querySelector('.category-list');
+    // let elem = document.querySelector('.category-list');
 
-    $(function(){
-        $('.category-list').click(function(){
-            divTrigger = $('.category-list').index(this);
-            thisMegaMenu = $('.megamenu:eq('+divTrigger+')');     
-            $('.megamenu').fadeOut();
+    $('.category-list').on('click', function() {
+      if ($('.megamenu').is(':visible')) { 
+        $('.megamenu').fadeOut(); 
+      } else { // если есть
+        $('.megamenu').fadeIn(); 
+      }
+    });
+    
+    $(document).mouseup(function(e) 
+    {
+        var container = $(".megamenu");
 
-            if(thisMegaMenu.is(":not(':visible')")){    
-            thisMegaMenu.fadeIn();
-            }
-            
-        
-    });
-       
-    });
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            container.fadeOut();
+        }
+    }); 
 
     // dropleft menu
 
@@ -647,13 +651,6 @@ setTimeout(function(){
       $(".popUp-overlay").fadeOut(1000);
     }
 
-    document.addEventListener("click", (e) => {
-      const click = e.composedPath().includes(popUp)
-      if(!click){
-        popUp.classList.add("hinge");
-        $(".popUp-overlay").fadeOut(1000);
-      }
-    })
 
 // Popup input text numbers block validation function
 
