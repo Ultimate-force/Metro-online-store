@@ -1231,6 +1231,7 @@ text-transform: uppercase;
 
 .about-our-store{
     margin-bottom: 80px!important;
+    margin-top: 30px;
 }
 
 .about-widget{
@@ -1260,7 +1261,6 @@ text-transform: uppercase;
 }
 
 .about-image {
-    margin-top: 30px;
     padding: 15px 0px 0px 15px;
 }
 
@@ -1320,6 +1320,7 @@ text-transform: uppercase;
   --e-column-margin-right: 20px;
   --e-column-margin-left: 0px;
   border-radius: 5px 5px 5px 5px;
+  min-height: 16em;
 }
 
 .zero-m{
@@ -1514,10 +1515,94 @@ text-transform: uppercase;
 
 /* Best team */
 
+.best-team{
+  margin-bottom: 60px!important;
+  text-align: center;
+}
 
+.best-team__title{
+  margin-bottom: 30px!important;
+}
 
+.best-team h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #878787;
+  line-height: 20px;
+}
 
+.best-team h2 {
+  font-size: 26px;
+  font-weight: 400;
+  padding-bottom: 0;
+  border: none;
+  color: #000;
+  text-transform: capitalize;
+}
 
+.person-img img{
+  height: auto;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 5px !important;
+}
+
+.person-description{
+  padding: 15px;
+  background-color: #f3f7f8;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.person-description span{
+  color: #000;
+  font-size: 12px;
+  margin: 0 0;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.person-description h3{
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px 0 12px;
+  text-transform: capitalize;
+  display: block;
+  cursor: pointer;
+}
+
+.person-card:hover .person-description{
+  background-color: #015ADE;
+} 
+
+.person-card:hover .person-description span{
+  color: #fff;
+} 
+
+.person-card:hover .person-description h3{
+  color: #fff;
+} 
+
+.person-card:hover .person-description i{
+  color: #fff;
+}
+
+.person-media{
+  margin: 6px auto 0;
+}
+
+.person-media i{
+  display: inline-block;
+  margin: 0 8px 5px;
+  color: #015ADE;
+  font-size: 14px;
+  cursor: pointer;
+}
 
 
 
