@@ -1,49 +1,19 @@
 $(document).ready(function () {
-
-  // firsArrowFunction
-
-  $('#customarrow').click(function () {
-    $(this).toggleClass('customSelectOpen');
-  }), function () {
-    $(this).toggleClass('customSelectArrow');
-  };
-
-  $('#cselect').click(function () {
-    $('#customarrow').toggleClass('customSelectOpen');
-  }), function () {
-    $('#customarrow').toggleClass('customSelectArrow');
-  };
-
-  // secondArrowFunction
-
-  $('#customarrowsecond').click(function () {
-    $(this).toggleClass('customSelectOpen');
-  }), function () {
-    $(this).toggleClass('customSelectArrow');
-  };
-
-  $('#cselectsecond').click(function () {
-    $('#customarrowsecond').toggleClass('customSelectOpen');
-  }), function () {
-    $('#customarrowsecond').toggleClass('customSelectArrow');
-  };
-
-
+  
   // visible dropdown menu
-  // let elem = document.querySelector('.category-list');
 
   $('.category-list').on('click', function () {
     if ($('.megamenu').is(':visible')) {
       $('.megamenu').fadeOut();
-    } else { // если есть
+    } else { 
       $('.megamenu').fadeIn();
     }
   });
+  // if the target of the click isn't the container nor a descendant of the container
 
   $(document).mouseup(function (e) {
     var container = $(".megamenu");
 
-    // if the target of the click isn't the container nor a descendant of the container
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       container.fadeOut();
     }
@@ -464,6 +434,125 @@ $(document).ready(function () {
 
 
 
+
+  // Sweet alert  function for popup after log in
+  $('#send').on('click', check);
+
+  function check() {
+    if ($('#text').val() !== '' && $('#email').val() !== '') {
+      $(".popUp-overlay").fadeOut(1000);
+      $(".popUp-wrapper").addClass("confirm");
+      setTimeout(() => {
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Welcome',
+          hideClass: {
+            popup: 'animate__animated animate__bounceOutRight'
+          },
+          text: 'You sign in!',
+          showConfirmButton: false,
+          timer: 3000,
+          toast: true
+        })
+      }, 800)
+
+    }
+
+  }
+
+
+
+
+});
+
+
+
+// Pre-loader function
+
+document.body.onload = function () {
+
+  setTimeout(function () {
+    let preLoader = document.getElementById('page-preloader');
+
+    if (!preLoader.classList.contains('unvisible')) {
+      preLoader.classList.add('unvisible');
+    }
+  }, 1000);
+}
+
+
+// Select Function
+
+let selectContainer = document.querySelector(".select-container");
+let select = document.querySelector(".select");
+let inputSel = document.getElementById("inputSel");
+let options = document.querySelectorAll(".select-container .option");
+
+select.onclick = () => {
+    selectContainer.classList.toggle("active");
+    $('.customSelectArrow').toggleClass("customSelectOpen");
+};
+
+options.forEach((e) => {
+    e.addEventListener("click", () => {
+        inputSel.value = e.innerText;
+        selectContainer.classList.remove("active");
+        $('.customSelectArrow').removeClass("customSelectOpen");
+        options.forEach((e) => {
+            e.classList.remove("selected");
+        });
+        e.classList.add("selected");
+    });
+});
+
+$(document).mouseup(function (s) {
+  let sel = $(".select");
+
+  if (!sel.is(s.target) && sel.has(s.target).length === 0) {
+    selectContainer.classList.remove("active");
+    $('.customSelectArrow').removeClass('customSelectOpen');
+    
+  }
+});
+
+
+
+// SelectMedia Function
+// let selectContainerMedia = document.querySelector(".select-containerMedia");
+// let selectMedia = document.querySelector(".selectMedia");
+// let inputSelMedia = document.getElementById("inputSelMedia");
+// let optionsMedia = document.querySelectorAll(".select-containerMedia .optionMedia");
+
+// selectMedia.onclick = () => {
+//     selectContainerMedia.classList.toggle("activeMedia");
+//     $('.customSelectArrow').toggleClass("customSelectOpen");
+// };
+
+// optionsMedia.forEach((g) => {
+//     g.addEventListener("click", () => {
+//         inputSelMedia.value = g.innerText;
+//         selectContainerMedia.classList.remove("activeMedia");
+//         $('.customSelectArrow').removeClass("customSelectOpen");
+//         optionsMedia.forEach((g) => {
+//             g.classList.remove("selectedMedia");
+//         });
+//         g.classList.add("selectedMedia");
+//     });
+// });
+
+// $(document).mouseup(function (m) {
+//   let selMedia = $(".selectMedia");
+
+//   if (!selMedia.is(m.target) && selMedia.has(m.target).length === 0) {
+//     selectContainerMedia.classList.remove("activeMedia");
+//     $('.customSelectArrow').removeClass('customSelectOpen');
+    
+//   }
+// });
+
+
+
   // best deals product countdown
 
   let countDownDate = new Date("October 14, 2023 15:37:25").getTime();
@@ -679,49 +768,3 @@ $(document).ready(function () {
 
     };
   }
-
-  // Sweet alert  function for popup after log in
-  $('#send').on('click', check);
-
-  function check() {
-    if ($('#text').val() !== '' && $('#email').val() !== '') {
-      $(".popUp-overlay").fadeOut(1000);
-      $(".popUp-wrapper").addClass("confirm");
-      setTimeout(() => {
-        Swal.fire({
-          position: 'top-end',
-          icon: 'success',
-          title: 'Welcome',
-          hideClass: {
-            popup: 'animate__animated animate__bounceOutRight'
-          },
-          text: 'You sign in!',
-          showConfirmButton: false,
-          timer: 3000,
-          toast: true
-        })
-      }, 800)
-
-    }
-
-  }
-
-
-
-
-});
-
-
-
-// Pre-loader function
-
-document.body.onload = function () {
-
-  setTimeout(function () {
-    let preLoader = document.getElementById('page-preloader');
-
-    if (!preLoader.classList.contains('unvisible')) {
-      preLoader.classList.add('unvisible');
-    }
-  }, 1000);
-}
