@@ -8,8 +8,10 @@
     <title>No Sidebar</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/no-sidebar__second-page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/Responsive/media.css">
     <link rel="stylesheet" href="css/Responsive/no-sidebar__second-page__media.css">
     <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,8 +49,8 @@
                 <!-- /.sep -->
                 <form name="myForm" action="#" onsubmit="return false" method="post">
                     <div class="inputs">
-                        <input type="email" id="email" name="mail" placeholder="Email" required>
-                        <input type="text" id="text" name="text" placeholder="Name" required>
+                        <input type="email" id="email" class="inp" name="mail" placeholder="Email" required>
+                        <input type="text" id="text" class="inp" name="text" placeholder="Name" required>
                         <input type="submit" id="send" value="SIGN UP FOR NEWSLETTER NOW">
                     </div>
                 </form>
@@ -96,7 +98,7 @@
                 <h3 class="mob-toggle">Menu</h3>
                 <span class="close-menu"></span>
                 <ul class="mobile-ul">
-                    <li class=""><a style="color:#015ADE" href="index.html" aria-current="page">Home</a></li>
+                    <li class=""><a style="color:#015ADE" href="#" aria-current="page">Home</a></li>
                     <li class=""><a href="#">Shop</a></li>
                     <li class="nav-button">
                         <ul class="sub-menu closed">
@@ -113,23 +115,44 @@
 
 
 
-
             <div class="header-search none">
                 <form method="get" class="woocommerce-product-search" action="">
                     <div class="product-search-widget">
-                        <select class="customSelect" id="cselectsecond" name="product_cat">
-                            <option value="" selected="selected">All Categories</option>
-                            <option value="bag">Bag</option>
-                            <option value="camera">camera</option>
-                            <option value="headphones">headphones</option>
-                            <option value="mouse">mouse</option>
-                            <option value="phone">Phone</option>
-                            <option value="shoes">Shoes</option>
-                            <option value="speaker">Speaker</option>
-                            <option value="stove">stove</option>
-                            <option value="watch">watch</option>
-                        </select>
-                        <span class="customSelectArrow" id="customarrowsecond"></span>
+                         <div class="select-containerMedia">
+                                    <div class="selectMedia">
+                                        <input type="text" id="inputSelMedia" placeholder="All Categories" onfocus="this.blur();">
+                                        <span class="customSelectArrowMedia" id="customarrow"></span>
+                                    </div>
+                                    <div class="option-containerMedia">
+                                        <div class="optionMedia">
+                                            <label> All Categories </label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>bag</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>camera</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>headphones</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>mouse</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>shoes</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>speaker</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>stove</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>watch</label>
+                                        </div>
+                                    </div>
+                                </div>
                         <input type="search" class="search-field" placeholder="Search Products…" title="Search for:">
                         <input type="hidden" name="post_type" value="product">
                         <button type="submit" value="Search">Search</button>
@@ -180,19 +203,42 @@
                     <div class="header-search">
                         <form method="get" class="woocommerce-product-search" action="">
                             <div class="product-search-widget">
-                                <select class="customSelect" id="cselect" name="product_cat">
-                                    <option value="" selected="selected">All Categories</option>
-                                    <option value="bag">Bag</option>
-                                    <option value="camera">camera</option>
-                                    <option value="headphones">headphones</option>
-                                    <option value="mouse">mouse</option>
-                                    <option value="phone">Phone</option>
-                                    <option value="shoes">Shoes</option>
-                                    <option value="speaker">Speaker</option>
-                                    <option value="stove">stove</option>
-                                    <option value="watch">watch</option>
-                                </select>
-                                <span class="customSelectArrow" id="customarrow"></span>
+                                <div class="select-container">
+                                    <div class="select">
+                                        <input type="text" id="inputSel" placeholder="All Categories" onfocus="this.blur();">
+                                        <span class="customSelectArrow" id="customarrow"></span>
+                                    </div>
+                                
+                                    <div class="option-container">
+                                        <div class="option">
+                                            <label> All Categories </label>
+                                        </div>
+                                        <div class="option">
+                                            <label>bag</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>camera</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>headphones</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>mouse</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>shoes</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>speaker</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>stove</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>watch</label>
+                                        </div>
+                                    </div>
+                                </div>
                                 <input type="search" class="search-field" placeholder="Search Products…"
                                     title="Search for:">
                                 <input type="hidden" name="post_type" value="product">
@@ -394,10 +440,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="wrapper-latest">
+                    <div class="wrapper-latest__about">
                         <div class="entry-content-datea">
                             <div class="meta-inner">
-                                <span class="date">
+                                <span>
                                     <a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i>January 6, 2022</a>
                                 </span>
                             </div>
@@ -413,7 +459,7 @@
                             </div>
                         </div>
                         <!-- /.image-block -->
-                        <div class="product-detail-wrapper">
+                        <div class="product-detail-wrapper__about">
                             <h3>Donec mattis sapien ac dolor euismod varius.</h3>
                             <div class="entry-content-date">
                                 <span class="comments-link">
@@ -435,7 +481,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.product-detail-wrapper -->
+                        <!-- /.product-detail-wrapper__about -->
                     </div>
                 </div>
                 <!-- /.col-md-6 -->

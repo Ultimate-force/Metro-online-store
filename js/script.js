@@ -488,6 +488,7 @@ let selectContainer = document.querySelector(".select-container");
 let select = document.querySelector(".select");
 let inputSel = document.getElementById("inputSel");
 let options = document.querySelectorAll(".select-container .option");
+let customSelectArrow = document.querySelector(".customSelectArrow");
 
 select.onclick = () => {
     selectContainer.classList.toggle("active");
@@ -506,50 +507,48 @@ options.forEach((e) => {
     });
 });
 
-$(document).mouseup(function (s) {
-  let sel = $(".select");
-
-  if (!sel.is(s.target) && sel.has(s.target).length === 0) {
+const sel = document.querySelector('.select');
+document.addEventListener('click', (e) => {
+  const click = e.composedPath().includes(sel);
+  if ( !click ) {
     selectContainer.classList.remove("active");
-    $('.customSelectArrow').removeClass('customSelectOpen');
-    
+    $('.customSelectArrow').removeClass("customSelectOpen");
   }
-});
-
+})
 
 
 // SelectMedia Function
-// let selectContainerMedia = document.querySelector(".select-containerMedia");
-// let selectMedia = document.querySelector(".selectMedia");
-// let inputSelMedia = document.getElementById("inputSelMedia");
-// let optionsMedia = document.querySelectorAll(".select-containerMedia .optionMedia");
 
-// selectMedia.onclick = () => {
-//     selectContainerMedia.classList.toggle("activeMedia");
-//     $('.customSelectArrow').toggleClass("customSelectOpen");
-// };
+let selectContainerMedia = document.querySelector(".select-containerMedia");
+let selectMedia = document.querySelector(".selectMedia");
+let inputSelMedia = document.getElementById("inputSelMedia");
+let optionsMedia = document.querySelectorAll(".select-containerMedia .optionMedia");
 
-// optionsMedia.forEach((g) => {
-//     g.addEventListener("click", () => {
-//         inputSelMedia.value = g.innerText;
-//         selectContainerMedia.classList.remove("activeMedia");
-//         $('.customSelectArrow').removeClass("customSelectOpen");
-//         optionsMedia.forEach((g) => {
-//             g.classList.remove("selectedMedia");
-//         });
-//         g.classList.add("selectedMedia");
-//     });
-// });
+selectMedia.onclick = () => {
+    selectContainerMedia.classList.toggle("activeMedia");
+    $('.customSelectArrowMedia').toggleClass("customSelectOpenMedia");
+};
 
-// $(document).mouseup(function (m) {
-//   let selMedia = $(".selectMedia");
+optionsMedia.forEach((g) => {
+    g.addEventListener("click", () => {
+        inputSelMedia.value = g.innerText;
+        selectContainerMedia.classList.remove("activeMedia");
+        $('.customSelectArrowMedia').removeClass("customSelectOpenMedia");
+        optionsMedia.forEach((g) => {
+            g.classList.remove("selectedMedia");
+        });
+        g.classList.add("selectedMedia");
+    });
+});
 
-//   if (!selMedia.is(m.target) && selMedia.has(m.target).length === 0) {
-//     selectContainerMedia.classList.remove("activeMedia");
-//     $('.customSelectArrow').removeClass('customSelectOpen');
-    
-//   }
-// });
+const selMedia = document.querySelector('.selectMedia');
+document.addEventListener('click', (e) => {
+  const clickMedia = e.composedPath().includes(selMedia);
+  if ( !clickMedia ) {
+    selectContainerMedia.classList.remove("activeMedia");
+    $('.customSelectArrowMedia').removeClass("customSelectOpenMedia");
+  }
+})
 
 
 

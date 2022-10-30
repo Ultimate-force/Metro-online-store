@@ -8,8 +8,10 @@
     <title>About Us</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/Responsive/media.css">
     <link rel="stylesheet" href="css/Responsive/about-us__media.css">
     <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -95,7 +97,7 @@
                 <h3 class="mob-toggle">Menu</h3>
                 <span class="close-menu"></span>
                 <ul class="mobile-ul">
-                    <li class=""><a style="color:#015ADE" href="index.html" aria-current="page">Home</a></li>
+                    <li class=""><a style="color:#015ADE" href="#" aria-current="page">Home</a></li>
                     <li class=""><a href="#">Shop</a></li>
                     <li class="nav-button">
                         <ul class="sub-menu closed">
@@ -105,30 +107,51 @@
                             <li><a href="no-sidebar.html">No Sidebar</a></li>
                         </ul>
                     </li>
-                    <li class=""><a href="#">About Us</a></li>
+                    <li class=""><a href="about-us.html">About Us</a></li>
                     <li class=""><a href="#">Contact Us</a></li>
                 </ul>
             </div>
 
 
 
-
             <div class="header-search none">
                 <form method="get" class="woocommerce-product-search" action="">
                     <div class="product-search-widget">
-                        <select class="customSelect" id="cselectsecond" name="product_cat">
-                            <option value="" selected="selected">All Categories</option>
-                            <option value="bag">Bag</option>
-                            <option value="camera">camera</option>
-                            <option value="headphones">headphones</option>
-                            <option value="mouse">mouse</option>
-                            <option value="phone">Phone</option>
-                            <option value="shoes">Shoes</option>
-                            <option value="speaker">Speaker</option>
-                            <option value="stove">stove</option>
-                            <option value="watch">watch</option>
-                        </select>
-                        <span class="customSelectArrow" id="customarrowsecond"></span>
+                         <div class="select-containerMedia">
+                                    <div class="selectMedia">
+                                        <input type="text" id="inputSelMedia" placeholder="All Categories" onfocus="this.blur();">
+                                        <span class="customSelectArrowMedia" id="customarrow"></span>
+                                    </div>
+                                    <div class="option-containerMedia">
+                                        <div class="optionMedia">
+                                            <label> All Categories </label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>bag</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>camera</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>headphones</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>mouse</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>shoes</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>speaker</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>stove</label>
+                                        </div>
+                                        <div class="optionMedia">
+                                            <label>watch</label>
+                                        </div>
+                                    </div>
+                                </div>
                         <input type="search" class="search-field" placeholder="Search Products…" title="Search for:">
                         <input type="hidden" name="post_type" value="product">
                         <button type="submit" value="Search">Search</button>
@@ -179,19 +202,42 @@
                     <div class="header-search">
                         <form method="get" class="woocommerce-product-search" action="">
                             <div class="product-search-widget">
-                                <select class="customSelect" id="cselect" name="product_cat">
-                                    <option value="" selected="selected">All Categories</option>
-                                    <option value="bag">Bag</option>
-                                    <option value="camera">camera</option>
-                                    <option value="headphones">headphones</option>
-                                    <option value="mouse">mouse</option>
-                                    <option value="phone">Phone</option>
-                                    <option value="shoes">Shoes</option>
-                                    <option value="speaker">Speaker</option>
-                                    <option value="stove">stove</option>
-                                    <option value="watch">watch</option>
-                                </select>
-                                <span class="customSelectArrow" id="customarrow"></span>
+                                <div class="select-container">
+                                    <div class="select">
+                                        <input type="text" id="inputSel" placeholder="All Categories" onfocus="this.blur();">
+                                        <span class="customSelectArrow" id="customarrow"></span>
+                                    </div>
+                                
+                                    <div class="option-container">
+                                        <div class="option">
+                                            <label> All Categories </label>
+                                        </div>
+                                        <div class="option">
+                                            <label>bag</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>camera</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>headphones</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>mouse</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>shoes</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>speaker</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>stove</label>
+                                        </div>
+                                        <div class="option">
+                                            <label>watch</label>
+                                        </div>
+                                    </div>
+                                </div>
                                 <input type="search" class="search-field" placeholder="Search Products…"
                                     title="Search for:">
                                 <input type="hidden" name="post_type" value="product">
@@ -344,7 +390,7 @@
                                 </ul>
                                 <span></span>
                             </li>
-                            <li><a href="#">about us</a>
+                            <li><a href="about-us.html">about us</a>
                             </li>
                             <li><a href="#">contact us</a></li>
                         </ul>

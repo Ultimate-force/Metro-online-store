@@ -418,6 +418,21 @@
     color: black;
     cursor: pointer;
   }
+
+  .customSelectArrowMedia {
+    background: url(../../images/down_arrow.png) no-repeat;
+    position: absolute;
+    left: 9rem;
+    top: 45%;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 10px;
+    height: 6px;
+  }
+  
+  .customSelectOpenMedia {
+    transform: rotate(540deg);
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -426,6 +441,12 @@
     height: auto;
   }
 } 
+
+@media only screen and (max-width: 768px) {
+  .select-containerMedia {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .img-fluid {
@@ -1503,7 +1524,7 @@
   }
 }
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 992px) {
   .service-description {
     text-align: inherit;
     padding-top: 2px;

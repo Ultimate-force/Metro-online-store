@@ -20,7 +20,45 @@
 <body>
 
 
-<!-- POPUP OLMALIDI!!! -->
+    <div id="page-preloader" class="">
+        <div class="preloader">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <div class="popUp-overlay">
+        <div class="popUp-wrapper">
+            <div class="popUp-content">
+                <div class="header">
+                    <h3>Subscribe to our newsletter</h3>
+                    <div class="subheading">Want to be notified when our article is published? Enter your email address
+                        and name below to be the first to know.</div>
+                </div>
+                <!-- /.header -->
+                <div class="sep"></div>
+                <!-- /.sep -->
+                <form name="myForm" action="#" onsubmit="return false" method="post">
+                    <div class="inputs">
+                        <input type="email" id="email" class="inp" name="mail" placeholder="Email" required>
+                        <input type="text" id="text" class="inp" name="text" placeholder="Name" required>
+                        <input type="submit" id="send" value="SIGN UP FOR NEWSLETTER NOW">
+                    </div>
+                </form>
+                <!-- /.inputs -->
+            </div>
+            <!-- /.popUp-content -->
+            <a class="popUp-close"></a>
+        </div>
+        <!-- /.popUp-wrapper -->
+    </div>
+    <!-- /.popUp-overlay -->
 
     <header class="header">
         <div class="container">
@@ -74,14 +112,13 @@
 
 
 
-
             <div class="header-search none">
                 <form method="get" class="woocommerce-product-search" action="">
                     <div class="product-search-widget">
                          <div class="select-containerMedia">
                                     <div class="selectMedia">
                                         <input type="text" id="inputSelMedia" placeholder="All Categories" onfocus="this.blur();">
-                                        <span class="customSelectArrow" id="customarrow"></span>
+                                        <span class="customSelectArrowMedia" id="customarrow"></span>
                                     </div>
                                     <div class="option-containerMedia">
                                         <div class="optionMedia">
