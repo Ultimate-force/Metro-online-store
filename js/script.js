@@ -9,7 +9,19 @@ $(document).ready(function () {
       $('.megamenu').fadeIn();
     }
   });
-  // if the target of the click isn't the container nor a descendant of the container
+
+
+  // Fade dropdown language change menu
+
+  $(".dropdown").hover(
+    function () {
+      $('.dropdown-content', this).stop().fadeIn();
+    },
+    function () {
+      $('.dropdown-content', this).stop().fadeOut();
+    });
+
+  // if the click target is not a container or a child of a container
 
   $(document).mouseup(function (e) {
     var container = $(".megamenu");
@@ -268,6 +280,8 @@ $(document).ready(function () {
     speed: 800,
     easing: 'ease',
     arrows: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 1250,

@@ -387,7 +387,6 @@ svg {
   box-shadow: 2px 2px 11px rgb(0 0 0 / 10%);
   width: 80px;
   border-radius: 5px;
-
 }
 
 .dropdown-content a {
@@ -399,9 +398,9 @@ svg {
 }
 
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+/* .dropdown:hover .dropdown-content {
+  opacity: 1;
+} */
 
 /* header-top */
 
@@ -1007,7 +1006,9 @@ svg {
 .navigation li ul {
   background: rgba(0, 0, 0, 0.1);
   position: absolute;
+  border: 1px solid transparent;
   top: 100%;
+  box-shadow: 2px 2px 11px rgb(0 0 0 / 0%);
   left: 0;
   opacity: 0;
   text-align: left;
